@@ -16,7 +16,7 @@ export const NavBar = () => {
     };
 
     return (
-        <div className={`bg-white dark:bg-black text-black p-4`}>
+        <div className={`bg-white dark:bg-darkmode text-black p-4`}>
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <img src="/path/to/your-logo.png" alt="Logo" className="h-8 mr-2" />
