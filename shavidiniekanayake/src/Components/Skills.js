@@ -122,9 +122,9 @@ export const Skills = () => {
 
   return (
     <div className={`bg-white dark:bg-darkmode text-black p-4`}>
-      <div className=" mx-10">
+      <div className=" mx-20">
         <div className="text-center">
-          <h1 className="text-5xl font-bold dark:text-white font-inter font-">
+          <h1 className="text-5xl font-bold dark:text-white text-textBlue">
             My Skills
           </h1>
           <p className="font-inter font-medium text-black dark:text-white p-4">
@@ -135,8 +135,8 @@ export const Skills = () => {
           <button
             className={`py-2 px-8 rounded-l-full ${
               selectedCategory === "dev"
-                ? "bg-black text-white font-inter font-medium"
-                : "bg-[#ffffff] border border-[#7b7b7b] text-black font-iter font-medium"
+              ? "bg-lightBlue text-white font-medium"
+              : "bg-[#ffffff] text-textBlue font-medium"
             }`}
             onClick={() => setSelectedCategory("dev")}
           >
@@ -145,27 +145,27 @@ export const Skills = () => {
           <button
             className={`py-2 px-8 rounded-r-full ${
               selectedCategory === "design"
-                ? "bg-black text-white font-inter font-medium"
-                : "bg-[#c3c3c3] text-black font-iter font-medium"
+              ? "bg-lightBlue text-white font-medium"
+              : "bg-bglightBlue text-textBlue font-medium"
             }`}
             onClick={() => setSelectedCategory("design")}
           >
             Design
           </button>
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="text-center gap-5 flex flex-wrap justify-center">
           {filteredTools.map((tool, index) => (
             <div
               key={index}
               data-tip
               data-for={`tooltip-${index}`}
-              className="mx-4 relative"
+              className="relative rounded-xl border border-[#EDDCD4] shadow-[#ebebeb] shadow-lg hover:bg-bglightBlue hover:border-lightBlue"
               style={{ cursor: 'pointer' }}
             >
               <img
                 src={tool.img}
                 alt={`${tool.category} Logo`}
-                className="h-20 transition-transform duration-300 ease-in-out transform hover:scale-110"
+                className="h-24 transition-transform duration-300 ease-in-out transform hover:scale-110 p-5"
               />
               <ReactTooltip id={`tooltip-${index}`} effect="solid" place="bottom">
                 {tool.name} Tooltip

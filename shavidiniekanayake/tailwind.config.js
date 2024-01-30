@@ -14,6 +14,7 @@ module.exports = {
         darkmode: "#0D1117",
         textBlue: "#0b3558",
         lightBlue:"#006bff",
+        bglightBlue: "#F4F8FF"
       },
     },
   },

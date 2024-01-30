@@ -32,7 +32,7 @@ export const Projects = () => {
             className={`py-2 px-8 rounded-l-full ${
               selectedCategory === "dev"
                 ? "bg-lightBlue text-white font-medium"
-                : "bg-[#ffffff] text-black font-medium"
+                : "bg-[#ffffff]  text-textBlue font-medium"
             }`}
             onClick={() => setSelectedCategory("dev")}
           >
@@ -42,7 +42,7 @@ export const Projects = () => {
             className={`py-2 px-8 rounded-r-full ${
               selectedCategory === "design"
                 ? "bg-lightBlue text-white font-medium"
-                : "bg-[#c3c3c3] text-black font-medium"
+                : "bg-[#c3c3c3]  text-textBlue font-medium"
             }`}
             onClick={() => setSelectedCategory("design")}
           >
