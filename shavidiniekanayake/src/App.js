@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import {NavBar} from './Components/NavBar';
-import {Projects} from './Components/Projects'
-import {Skills} from './Components/Skills'
-import {Contact} from './Components/Contact'
-import {Experience} from './Components/Experience'
-import {Footer} from './Components/Footer'
-import { Certifications } from './Components/Certifications';
+import logo from "./logo.svg";
+import "./App.css";
+import { NavBar } from "./Components/NavBar";
+import { Projects } from "./Components/Projects";
+import { Skills } from "./Components/Skills";
+import { Contact } from "./Components/Contact";
+import { Experience } from "./Components/Experience";
+import { Footer } from "./Components/Footer";
+import { Certifications } from "./Components/Certifications";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <Contact/>
-      <Certifications/>
-      <Footer/>
+      <NavBar />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Certifications />
+      <Contact />
+      <Footer />
     </div>
   );
 }
