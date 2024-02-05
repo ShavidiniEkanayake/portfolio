@@ -124,8 +124,8 @@ export const Skills = () => {
     <div className={`bg-white dark:bg-darkmode text-black p-4`}>
       <div className=" mx-20">
         <div className="text-center">
-          <h1 className="text-5xl font-bold dark:text-white text-textBlue">
-            My Skills
+          <h1 className="text-5xl font-Cabinet font-extrabold dark:text-white text-textBlue">
+            Skills
           </h1>
           <p className="font-inter font-medium text-black dark:text-white p-4">
             TOOLS & TECHNOLOGIES
