@@ -4,3 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 @import 'react-tooltip/dist/react-tooltip.css';
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animated-marquee {
+    animation: marquee 20s linear infinite;
+  }
