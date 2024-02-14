@@ -23,7 +23,7 @@ jobs:
 
       - name: Fix base URL 🔧
         run: | 
-          sed -i "s/basePath: \"\"/basePath: '\/todo-list-manager'/" next.config.js
+          sed -i "s/basePath: \"\"/basePath: '\/shavidiniekanayake'/" next.config.js
   
       - name: Build changes
         run: npm run build
