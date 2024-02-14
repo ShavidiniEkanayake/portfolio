@@ -8,7 +8,11 @@ export const AboutMe = () => {
       <div className="w-1/3 pr-8">
         <div className={`flex items-end`}>
           <a className="font-Satoshi font-medium text-3xl">Hello, I am</a>
-          <img src={ShaviLogoRed} alt="Shavi Logo" className="h-9 w-auto ml-3 my-2" />
+          <img
+            src={ShaviLogoRed}
+            alt="Shavi Logo"
+            className="h-9 w-auto ml-3"
+          />
         </div>
 
         <div className="font-Satoshi font-medium text-3xl">
@@ -19,9 +23,7 @@ export const AboutMe = () => {
       </div>
 
       <div className="w-2/3">
-        <div className="font-Satoshi font-medium text-xl">
-          s
-        </div>
+        <div className="font-Satoshi font-medium text-xl">s</div>
       </div>
     </div>
   );
