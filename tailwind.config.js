@@ -9,13 +9,12 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        Cabinet: ['Cabinet']
+        Satoshi: ['Satoshi'],
+        SatoshiI:['SatoshiI']
       },
       colors: {
         darkmode: "#0D1117",
-        textBlue: "#0b3558",
-        lightBlue:"#006bff",
-        bglightBlue: "#F4F8FF"
+        orange: "#FF2E00"
       },
     },
   },
