@@ -34,8 +34,9 @@ function App() {
           <Home />
           {/* <AboutMe/> */}
           <Experience />
-          {/* <Projects />
           <Skills />
+          {/* <Projects />
+        
           
           <Certifications />
           <Contact />

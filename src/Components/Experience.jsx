@@ -10,7 +10,7 @@ export const Experience = () => {
   };
   return (
     <div className={`bg-white dark:bg-darkmode text-black mx-auto`}>
-      <div className="font-Satoshi font-black text-6xl  flex justify-end container  px-28">
+      <div className="font-Satoshi font-black text-6xl  flex justify-end container px-28">
         Experience
       </div>
 
