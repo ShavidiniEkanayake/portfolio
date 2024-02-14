@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/shavidiniekanayake/static/css/main.f8dab1cb.css",
-    "main.js": "/shavidiniekanayake/static/js/main.778f9487.js",
+    "main.css": "/shavidiniekanayake/static/css/main.1dfeb6bd.css",
+    "main.js": "/shavidiniekanayake/static/js/main.eb4fa116.js",
     "static/js/787.8772d4c1.chunk.js": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js",
     "static/media/50_Oracle_Cloud_Infrastructure.png": "/shavidiniekanayake/static/media/50_Oracle_Cloud_Infrastructure.20666bfd82840e2b56bd.png",
     "static/media/Satoshi-VariableItalic.ttf": "/shavidiniekanayake/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
     "static/media/Satoshi-Variable.ttf": "/shavidiniekanayake/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
     "static/media/OCDMF2022.png": "/shavidiniekanayake/static/media/OCDMF2022.76f1100e0faa37b84850.png",
     "static/media/Postman - Postman API Fundamentals Student Expert - 2022-12-24.png": "/shavidiniekanayake/static/media/Postman - Postman API Fundamentals Student Expert - 2022-12-24.174cbd43acf824777404.png",
-    "static/media/SLIIT_Logo_Crest.png": "/shavidiniekanayake/static/media/SLIIT_Logo_Crest.d793d1adbd4254ee5155.png",
     "static/media/CertiProf-Scrum-Foundation.png": "/shavidiniekanayake/static/media/CertiProf-Scrum-Foundation.1bdf46fa4a84b7348ac9.png",
-    "static/media/ACC.jpeg": "/shavidiniekanayake/static/media/ACC.e07be18ccaabeb855821.jpeg",
     "static/media/rwvcpc-download_300x300.avif": "/shavidiniekanayake/static/media/rwvcpc-download_300x300.51fbecbea5f9093c1457.avif",
-    "static/media/Shavi-logo.svg": "/shavidiniekanayake/static/media/Shavi-logo.ad82e92f2644e0de34eab80d55b19580.svg",
+    "static/media/Shavi-logo.svg": "/shavidiniekanayake/static/media/Shavi-logo.58c1039e5494df9197dee9c78faf2e6f.svg",
     "static/media/Shavi-logo-red.svg": "/shavidiniekanayake/static/media/Shavi-logo-red.71376546c5fc0f96a3bc3142a6dac814.svg",
     "static/media/Mysql.svg": "/shavidiniekanayake/static/media/Mysql.9014a587f0c63dc98b46f42edd72e574.svg",
     "static/media/skill-icons_sass.svg": "/shavidiniekanayake/static/media/skill-icons_sass.f734d3230dc87f6b66a81b5e185081ab.svg",
@@ -36,13 +34,14 @@
     "static/media/skill-icons_css.svg": "/shavidiniekanayake/static/media/skill-icons_css.cc428ff68115b9a2d7cf3a97a716f28d.svg",
     "static/media/skill-icons_html.svg": "/shavidiniekanayake/static/media/skill-icons_html.9460585bd343bf5f29e7206567c698dc.svg",
     "index.html": "/shavidiniekanayake/index.html",
+    "static/media/ExperienceBG.svg": "/shavidiniekanayake/static/media/ExperienceBG.ebf8492deb1a3c5db5c25e6e6b62a9bf.svg",
     "static/media/logos_microsoft-icon.svg": "/shavidiniekanayake/static/media/logos_microsoft-icon.8b06537ae478aef25d6f828d205d13c0.svg",
-    "main.f8dab1cb.css.map": "/shavidiniekanayake/static/css/main.f8dab1cb.css.map",
-    "main.778f9487.js.map": "/shavidiniekanayake/static/js/main.778f9487.js.map",
+    "main.1dfeb6bd.css.map": "/shavidiniekanayake/static/css/main.1dfeb6bd.css.map",
+    "main.eb4fa116.js.map": "/shavidiniekanayake/static/js/main.eb4fa116.js.map",
     "787.8772d4c1.chunk.js.map": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8dab1cb.css",
-    "static/js/main.778f9487.js"
+    "static/css/main.1dfeb6bd.css",
+    "static/js/main.eb4fa116.js"
   ]
 }
