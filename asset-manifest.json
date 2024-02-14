@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shavidiniekanayake/static/css/main.1dfeb6bd.css",
-    "main.js": "/shavidiniekanayake/static/js/main.eb4fa116.js",
+    "main.js": "/shavidiniekanayake/static/js/main.45023f3f.js",
     "static/js/787.8772d4c1.chunk.js": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js",
     "static/media/50_Oracle_Cloud_Infrastructure.png": "/shavidiniekanayake/static/media/50_Oracle_Cloud_Infrastructure.20666bfd82840e2b56bd.png",
     "static/media/Satoshi-VariableItalic.ttf": "/shavidiniekanayake/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
@@ -37,11 +37,11 @@
     "static/media/ExperienceBG.svg": "/shavidiniekanayake/static/media/ExperienceBG.ebf8492deb1a3c5db5c25e6e6b62a9bf.svg",
     "static/media/logos_microsoft-icon.svg": "/shavidiniekanayake/static/media/logos_microsoft-icon.8b06537ae478aef25d6f828d205d13c0.svg",
     "main.1dfeb6bd.css.map": "/shavidiniekanayake/static/css/main.1dfeb6bd.css.map",
-    "main.eb4fa116.js.map": "/shavidiniekanayake/static/js/main.eb4fa116.js.map",
+    "main.45023f3f.js.map": "/shavidiniekanayake/static/js/main.45023f3f.js.map",
     "787.8772d4c1.chunk.js.map": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1dfeb6bd.css",
-    "static/js/main.eb4fa116.js"
+    "static/js/main.45023f3f.js"
   ]
 }
