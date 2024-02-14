@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         darkmode: "#0D1117",
-        orange: "#FF2E00"
+        orange: "#FF2E00",
+        bgorange: "#FFF7F5"
       },
     },
   },

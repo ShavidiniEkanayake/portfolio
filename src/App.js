@@ -10,6 +10,7 @@ import { Footer } from "./Components/Footer";
 import { Certifications } from "./Components/Certifications";
 import { Contact } from "./Components/Contact";
 import { Home } from "./Components/Home";
+import { AboutMe } from "./Components/AboutMe";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -31,9 +32,11 @@ function App() {
         <>
           <NavBar />
           <Home />
-          <Projects />
-          {/* <Skills />
+          {/* <AboutMe/> */}
           <Experience />
+          {/* <Projects />
+          <Skills />
+          
           <Certifications />
           <Contact />
           <Footer /> */}

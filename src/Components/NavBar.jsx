@@ -24,7 +24,7 @@ export const NavBar = () => {
   return (
     <div>
       <div
-        className={`bg-white dark:bg-darkmode text-black py-2 px-4 lg:px-28`}
+        className={`bg-white dark:bg-darkmode text-black py-2 px-4 lg:px-28 w-screen`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -32,42 +32,42 @@ export const NavBar = () => {
             <div className="hidden lg:flex items-center space-x-7">
               <a
                 href="#"
-                className="hover:text-orange dark:text-white font-Satoshi font-bold text-lg ml-10"
+                className="hover:text-orange dark:text-white font-Satoshi font-semibold text-lg ml-10"
               >
                 About me
               </a>
               <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
               <a
                 href="#"
-                className="hover:text-orange  font-Satoshi font-bold text-lg"
+                className="hover:text-orange font-Satoshi font-semibold text-lg"
               >
                 Experience
               </a>
               <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
               <a
                 href="#"
-                className="hover:text-orange  font-Satoshi font-bold text-lg"
+                className="hover:text-orange  font-Satoshi font-semibold text-lg"
               >
                 Projects
               </a>
               <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
               <a
                 href="#"
-                className="hover:text-orange  font-Satoshi font-bold text-lg"
+                className="hover:text-orange  font-Satoshi font-semibold text-lg"
               >
                 Skills
               </a>
               <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
               <a
                 href="#"
-                className="hover:text-orange  font-Satoshi font-bold text-lg"
+                className="hover:text-orange  font-Satoshi font-semibold text-lg"
               >
                 Certificates
               </a>
               <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
               <a
                 href="#"
-                className="hover:text-orange  font-Satoshi font-bold text-lg"
+                className="hover:text-orange  font-Satoshi font-semibold text-lg"
               >
                 Contact Me
               </a>
@@ -114,31 +114,31 @@ export const NavBar = () => {
             </a>
             <a
               href="#"
-              className="hover:text-orange font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
             >
               Experience
             </a>
             <a
               href="#"
-              className="hover:text-orange font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
             >
               Projects
             </a>
             <a
               href="#"
-              className="hover:text-orange font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
             >
               Skills
             </a>
             <a
               href="#"
-              className="hover:text-orange font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
             >
               Certificates
             </a>
             <a
               href="#"
-              className="hover:text-orange font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
             >
               Contact Me
             </a>
