@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div className="">
       <div
-        className={`bg-bgorange dark:bg-darkmode text-black h-[41rem] flex items-center justify-center relative`}
+        className={`bg-bgorange dark:bg-darkmode text-black h-screen flex items-center justify-center relative`}
       >
         <div className="relative animate-fade-in">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

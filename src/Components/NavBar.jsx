@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, useRef } from "react";
 import ShaviLogo from "../Assets/Logos/Shavi-logo.svg";
 
 export const NavBar = () => {
   const [isDarkMode, setDarkMode] = useState("light");
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [menuWidth, setMenuWidth] = useState(null);
+  const navBarRef = useRef(null);
 
   useEffect(() => {
     if (isDarkMode === "dark") {
@@ -12,6 +14,12 @@ export const NavBar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    if (navBarRef.current) {
+      setMenuWidth(navBarRef.current.clientWidth);
+    }
+  }, [isMenuOpen]);
 
   const handleThemeChange = () => {
     setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
@@ -23,8 +31,9 @@ export const NavBar = () => {
 
   return (
     <div>
-      <div
-        className={`bg-white dark:bg-darkmode text-black px-28 `}
+       <div
+        ref={navBarRef}
+        className={`bg-white dark:bg-darkmode text-black px-28 relative`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -103,12 +112,15 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="lg:hidden bg-white dark:bg-darkmode text-black py-2 px-4">
-          <div className="flex flex-col ml-10">
+      {isMenuOpen && menuWidth && (
+        <div
+        className="lg:hidden bg-white dark:bg-darkmode text-black py-2 px-20 absolute top-16 z-50"
+        style={{ width: `${menuWidth}px` }}
+      >
+        <div className="flex flex-col ml-10">
             <a
               href="#"
-              className="hover:text-orange dark:text-white font-Satoshi font-bold text-lg py-2"
+              className="hover:text-orange dark:text-white font-Satoshi font-semibold text-lg py-2"
             >
               About me
             </a>

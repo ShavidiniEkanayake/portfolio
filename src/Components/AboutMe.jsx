@@ -29,10 +29,9 @@ export const AboutMe = () => {
     };
   }, []);
 
-
   return (
     <div className="bg-white dark:bg-darkmode text-black py-2 px-4 lg:px-28 mb-20 flex rounded-lg overflow-hidden relative h-screen">
-       <div className="w-2/4 pr-32 mt-48">
+      <div className="w-2/4 pr-32 mt-48">
         <div className={`flex items-end`}>
           <a className="font-Satoshi font-medium text-3xl">Hello, I am</a>
           <img

@@ -23,7 +23,7 @@ export const Experience = () => {
 
           <div className="mb-16">
             <div className="flex items-center">
-              <div className="w-12 h-9 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-xl mr-4">
+              <div className="w-12 h-9 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-xl mr-4 ">
                 01
               </div>
               <div className="font-Satoshi font-black text-3xl uppercase">
