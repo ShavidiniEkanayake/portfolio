@@ -32,15 +32,18 @@ function App() {
         <>
           <NavBar />
           <Home />
-          {/* <AboutMe/> */}
+          <AboutMe/>
           <Experience />
           <Skills />
+          <Certifications />
+          <Contact />
+          <Footer />
           {/* <Projects />
         
           
-          <Certifications />
-          <Contact />
-          <Footer /> */}
+          
+          
+           */}
         </>
       )}
     </div>

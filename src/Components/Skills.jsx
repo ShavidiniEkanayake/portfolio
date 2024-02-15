@@ -17,6 +17,10 @@ import ExpressJs from "../Assets/Logos/skill-icons_expressjs-dark.svg";
 import HTML from "../Assets/Logos/skill-icons_html.svg";
 import Java from "../Assets/Logos/skill-icons_java-dark.svg";
 import Js from "../Assets/Logos/skill-icons_javascript.svg"
+import ColoredMongodb from "../Assets/Logos/Colored_Mogodb.svg"
+import Colored_logos_nodejs from "../Assets/Logos/Colored_logos_nodejs.svg"
+import Colored_logos_react from "../Assets/Logos/Colored_logos_react.svg"
+import Colored_logos_tailwindcssicon from "../Assets/Logos/Colored_logos_tailwindcss-icon.svg"
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
@@ -26,6 +30,7 @@ export const Skills = () => {
       name: "React",
       category: "dev",
       img: ReactIconDark,
+     colorimg:Colored_logos_react
     },
     {
       name: "Bootstrap",
@@ -66,16 +71,19 @@ export const Skills = () => {
       name: "MongoDB",
       category: "dev",
       img: MongoDB,
+      colorimg: ColoredMongodb
     },
     {
       name: "Node",
       category: "dev",
       img: Node,
+      colorimg: Colored_logos_nodejs
     },
     {
       name: "Tailwind",
       category: "dev",
       img: Tailwind,
+      colorimg:Colored_logos_tailwindcssicon
     },
     {
       name: "SASS",
@@ -113,59 +121,31 @@ export const Skills = () => {
       img: WebFlow,
     },
   ];
-
-  const [selectedCategory, setSelectedCategory] = useState("dev");
-
-  const filteredTools = allTools.filter(
-    (tool) => tool.category === selectedCategory
-  );
-
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <div className={`bg-white dark:bg-darkmode text-black p-4`}>
       <div className=" mx-20">
         <div className="text-center">
-          <h1 className="font-Satoshi font-black text-6xl dark:text-white text-textBlue">
+          <h1 className="font-Satoshi font-black text-6xl dark:text-white my-10">
             Skills
           </h1>
-          <p className="font-inter font-medium text-black dark:text-white p-4">
-            TOOLS & TECHNOLOGIES
-          </p>
         </div>
-        <div className="text-center p-5">
-          <button
-            className={`py-2 px-8 rounded-l-full ${
-              selectedCategory === "dev"
-              ? "bg-lightBlue text-white font-medium"
-              : "bg-[#ffffff] text-textBlue font-medium"
-            }`}
-            onClick={() => setSelectedCategory("dev")}
-          >
-            Development
-          </button>
-          <button
-            className={`py-2 px-8 rounded-r-full ${
-              selectedCategory === "design"
-              ? "bg-lightBlue text-white font-medium"
-              : "bg-bglightBlue text-textBlue font-medium"
-            }`}
-            onClick={() => setSelectedCategory("design")}
-          >
-            Design
-          </button>
-        </div>
+        
         <div className="text-center gap-5 flex flex-wrap justify-center">
-          {filteredTools.map((tool, index) => (
+          {allTools.map((tool, index) => (
             <div
               key={index}
               data-tip
               data-for={`tooltip-${index}`}
-              className="relative rounded-xl border border-[#EDDCD4] shadow-[#ebebeb] shadow-lg hover:bg-bglightBlue hover:border-lightBlue"
+              className="relative border-[#EDDCD4]"
               style={{ cursor: 'pointer' }}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <img
-                src={tool.img}
-                alt={`${tool.category} Logo`}
-                className="h-24 transition-transform duration-300 ease-in-out transform hover:scale-110 p-5"
+                 src={hoveredIndex === index ? tool.colorimg : tool.img}
+                 alt={`${tool.category} Logo`}
+                 className="h-24 p-5"
               />
               <ReactTooltip id={`tooltip-${index}`} effect="solid" place="bottom">
                 {tool.name} Tooltip

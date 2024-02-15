@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import "./Certifications.css";
 import Microsoft from "../Assets/Logos/logos_microsoft-icon.svg";
 import Postman from "../Assets/Logos/Postman - Postman API Fundamentals Student Expert - 2022-12-24.png";
@@ -41,76 +41,86 @@ export const Certifications = () => {
     },
   ];
 
-  const [startIndex, setStartIndex] = useState(0);
+  const [selectedCertification, setSelectedCertification] = useState(
+    certifications[0]
+  );
+  const [visibleCertifications, setVisibleCertifications] = useState(
+    certifications.slice(0, 3)
+  );
 
-  const handleArrowClick = (direction) => {
-    const newStartIndex =
-      direction === "left"
-        ? Math.max(0, startIndex - 1)
-        : Math.min(certifications.length - 3, startIndex + 1);
+  const observer = useRef();
 
-    setStartIndex(newStartIndex);
+  const lastCertificationRef = useCallback(
+    (node) => {
+      if (observer.current) observer.current.disconnect();
+      observer.current = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            setVisibleCertifications((prevCertifications) =>
+              certifications.slice(0, prevCertifications.length + 3)
+            );
+          }
+        },
+        { threshold: 0.5 }
+      );
+
+      if (node) observer.current.observe(node);
+    },
+    [certifications]
+  );
+
+  const handleCertificationClick = (certification) => {
+    setSelectedCertification(certification);
   };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const newStartIndex = Math.min(certifications.length - 3, startIndex + 1);
-      setStartIndex(newStartIndex);
-    }, 2500);
-
-    return () => clearInterval(intervalId); 
-
-  }, [startIndex, certifications.length]);
 
   return (
     <div className={`bg-white dark:bg-darkmode text-black p-4`}>
-      <div className="mx-10">
-        <div className="text-center">
-          <h1 className="text-5xl font-Cabinet font-extrabold dark:text-white text-textBlue">
-            Certification and Awards
-          </h1>
+      <h1 className="font-Satoshi font-black text-6xl dark:text-white text-textBlue ml-28">
+        Certifications
+      </h1>
 
-          <div className="overflow-hidden mx-10 my-14 relative">
-            <div className="flex items-center space-x-4">
-              {certifications.slice(startIndex, startIndex + 3).map((certification, index) => (
-                <div
-                  key={index}
-                  className={`card bg-white p-4 border border-[#EDDCD4] hover:bg-bglightBlue hover:border-lightBlue rounded-lg  transition-transform duration-300 ease-in-out transform hover:scale-95`}
-                >
-                  <div className="flex items-start">
-                    <img
-                      src={certification.image}
-                      className="rounded-xl h-full w-20 mr-2"
-                      alt="Certification"
-                    />
+      <div className="flex">
+        <div className="overflow-y-auto mx-28 my-14 max-h-[400px]">
+          {visibleCertifications.map((certification, index) => (
+            <div
+              key={index}
+              ref={
+                index === visibleCertifications.length - 1
+                  ? lastCertificationRef
+                  : null
+              }
+              className={`card bg-white mb-6 p-4 w-[29rem] border border-[#EDDCD4] hover:bg-bglightBlue hover:border-lightBlue rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-95 ${
+                certification === selectedCertification ? "selected" : ""
+              }`}
+              onClick={() => handleCertificationClick(certification)}
+            >
+              <div className="flex items-start">
+                <img
+                  src={certification.image}
+                  className="rounded-xl h-full w-20 mr-2"
+                  alt="Certification"
+                />
 
-                    <div className="ml-4 w-[20rem]">
-                      <div className="font-bold text-lg text-left text-textBlue">
-                        {certification.name}
-                      </div>
+                <div className="ml-4">
+                  <div className="font-bold text-lg text-left text-textBlue">
+                    {certification.name}
+                  </div>
 
-                      <div className="text-[#989898] text-left">
-                        {certification.date}
-                      </div>
-                    </div>
+                  <div className="text-[#989898] text-left">
+                    {certification.date}
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
+          ))}
+        </div>
 
-            <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-darkmode text-black dark:text-white p-2 rounded-full shadow-md hover:bg-bglightBlue hover:text-lightBlue focus:outline-none"
-              onClick={() => handleArrowClick("left")}
-            >
-              {"<"}
-            </button>
-
-            <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-darkmode text-black dark:text-white p-2 rounded-full shadow-md hover:bg-bglightBlue hover:text-lightBlue focus:outline-none"
-              onClick={() => handleArrowClick("right")}
-            >
-              {">"}
-            </button>
+        <div className="ml-4 w-[20rem]">
+          <div className="font-bold text-lg text-left text-textBlue">
+            {selectedCertification.name}
+          </div>
+          <div className="text-[#989898] text-left">
+            {selectedCertification.date}
           </div>
         </div>
       </div>
