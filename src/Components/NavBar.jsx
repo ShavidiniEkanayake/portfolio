@@ -24,7 +24,7 @@ export const NavBar = () => {
   return (
     <div>
       <div
-        className={`bg-white dark:bg-darkmode text-black px-28 w-screen`}
+        className={`bg-white dark:bg-darkmode text-black px-28 `}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
