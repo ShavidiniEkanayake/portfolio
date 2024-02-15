@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shavidiniekanayake/static/css/main.aa8cfc4a.css",
-    "main.js": "/shavidiniekanayake/static/js/main.d07ea2f7.js",
+    "main.css": "/shavidiniekanayake/static/css/main.462a42b0.css",
+    "main.js": "/shavidiniekanayake/static/js/main.cb952745.js",
     "static/js/787.8772d4c1.chunk.js": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js",
     "static/media/Shavidini_3.png": "/shavidiniekanayake/static/media/Shavidini_3.6187fe0c34e2ced0d239.png",
     "static/media/Shavidini_2.png": "/shavidiniekanayake/static/media/Shavidini_2.52bcdaccc74a901e5313.png",
@@ -51,12 +51,12 @@
     "static/media/Facebook-ash.svg": "/shavidiniekanayake/static/media/Facebook-ash.c4cbe4796025ee9a3b94023496e7f008.svg",
     "static/media/Facebook-orgsvg.svg": "/shavidiniekanayake/static/media/Facebook-orgsvg.be69877aadf385aa2b83340a76f3649e.svg",
     "static/media/logos_microsoft-icon.svg": "/shavidiniekanayake/static/media/logos_microsoft-icon.8b06537ae478aef25d6f828d205d13c0.svg",
-    "main.aa8cfc4a.css.map": "/shavidiniekanayake/static/css/main.aa8cfc4a.css.map",
-    "main.d07ea2f7.js.map": "/shavidiniekanayake/static/js/main.d07ea2f7.js.map",
+    "main.462a42b0.css.map": "/shavidiniekanayake/static/css/main.462a42b0.css.map",
+    "main.cb952745.js.map": "/shavidiniekanayake/static/js/main.cb952745.js.map",
     "787.8772d4c1.chunk.js.map": "/shavidiniekanayake/static/js/787.8772d4c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa8cfc4a.css",
-    "static/js/main.d07ea2f7.js"
+    "static/css/main.462a42b0.css",
+    "static/js/main.cb952745.js"
   ]
 }
