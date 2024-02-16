@@ -33,7 +33,7 @@ export const NavBar = () => {
     <div>
        <div
         ref={navBarRef}
-        className={`bg-white dark:bg-darkmode text-black px-28 relative`}
+        className={`bg-white dark:bg-darkmode text-black px-28 relative w-svw`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">

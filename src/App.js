@@ -30,19 +30,15 @@ function App() {
         <SplashScreen />
       ) : (
         <>
-          <NavBar />
+          {/* <NavBar /> */}
           <Home />
           <AboutMe/>
-          <Experience />
+          {/* <Experience />
           <Skills />
           <Certifications />
           <Contact />
-          <Footer />
+          <Footer /> */}
           {/* <Projects />
-        
-          
-          
-          
            */}
         </>
       )}

@@ -17,6 +17,18 @@ module.exports = {
         orange: "#FF2E00",
         bgorange: "#FFF7F5"
       },
+      maxWidth: {
+        body: '1680px'
+      },
+      transitionDuration: {
+        medium: '300ms',
+        long: '500ms'
+      },
+      screens: {
+        xxs: '350px',
+        xs: '400px',
+        xsm: '450px'
+      }
     },
   },
   darkMode: 'class',
