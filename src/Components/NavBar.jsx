@@ -33,7 +33,7 @@ export const NavBar = () => {
     <div>
        <div
         ref={navBarRef}
-        className={`bg-white dark:bg-darkmode text-black px-28 relative w-svw`}
+        className={`bg-white dark:bg-darkmode text-black px-28 relative`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -114,7 +114,7 @@ export const NavBar = () => {
       </div>
       {isMenuOpen && menuWidth && (
         <div
-        className="lg:hidden bg-white dark:bg-darkmode text-black py-2 px-20 absolute top-16 z-50"
+        className="lg:hidden bg-white dark:bg-darkmode text-black py-2 px-20 absolute top-16 z-50 xs:h-[calc(100vh-90px-46px)]"
         style={{ width: `${menuWidth}px` }}
       >
         <div className="flex flex-col ml-10">

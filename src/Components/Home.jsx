@@ -5,12 +5,12 @@ export const Home = () => {
   return (
     <div>
       <div
-        className={`bg-bgorange dark:bg-darkmode text-black h-[calc(100vh-70px-46px)]  xs:h-[calc(100vh-90px-46px)] flex items-center justify-center relative `}
+        className={`bg-bgorange dark:bg-darkmode text-black h-[calc(100vh-90px-46px)]  xs:h-[calc(100vh-90px-46px)] flex items-center justify-center relative `}
       >
         <div className="relative animate-fade-in">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div
-              className="bg-black dark:bg-white rounded-full flex items-center justify-center w-[90vw] h-[90vw] sm:w-[70vw] sm:h-[70vw] xsm:w-[80vw] xsm:h-[80vw] md:w-[54vw] md:h-[54vw] lg:w-[37vw] lg:h-[37vw] py-10"
+              className="bg-black dark:bg-white rounded-full flex items-center justify-center w-[90vw] h-[90vw] sm:w-[65vw] sm:h-[65vw] xsm:w-[80vw] xsm:h-[80vw] md:w-[52vw] md:h-[52vw] lg:w-[37vw] lg:h-[37vw] py-10"
             ></div>
           </div>
           <div className="text-center">
