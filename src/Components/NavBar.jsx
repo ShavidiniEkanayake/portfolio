@@ -21,9 +21,9 @@ export const NavBar = () => {
     }
   }, [isMenuOpen]);
 
-  const handleThemeChange = () => {
-    setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
-  };
+  // const handleThemeChange = () => {
+  //   setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+  // };
 
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
