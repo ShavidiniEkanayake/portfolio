@@ -5,6 +5,8 @@ import {Splash} from "./components/splash";
 import {Home} from "./components/home";
 import { AboutMe } from './components/aboutMe';
 import  {Footer} from './components/footer';
+import { Contact } from './components/contact';
+import { Experience } from './components/experience';
 
 function App() {
     const [showSplash, setShowSplash] = useState(true);
@@ -26,7 +28,9 @@ function App() {
         <NavBar />
         <Home />
         <AboutMe />
+        <Contact />
         <Footer />
+        <Experience />
         {/* 
         <Skills />
         <Certifications />
