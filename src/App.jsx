@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './style.css'
 import { NavBar } from "./components/navbar";
 import {Splash} from "./components/splash";
 import {Home} from "./components/home";
-import { AboutMe } from './components/aboutMe';
+import { AboutMe } from './components/about-me';
 import  {Footer} from './components/footer';
 import { Contact } from './components/contact';
 import { Experience } from './components/experience';
+import { Certifications } from './components/certifications';
 
 function App() {
     const [showSplash, setShowSplash] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Contact />
         <Footer />
         <Experience />
+        <Certifications />
         {/* 
         <Skills />
         <Certifications />

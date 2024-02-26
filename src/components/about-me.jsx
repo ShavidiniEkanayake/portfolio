@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Shavi_1 from "../assets/images/shavidini_1.png";
 
 export const AboutMe = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -39,7 +38,7 @@ export const AboutMe = () => {
         </div>
         <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
           <img
-            src={Shavi_1}
+            src="./images/profile.png"
             alt=""
             className="bg-cover -rotate-45"
             style={{ transform: `rotate(${scrollY * -0.01}deg)` }}
