@@ -8,6 +8,7 @@ import  {Footer} from './components/footer';
 import { Contact } from './components/contact';
 import { Experience } from './components/experience';
 import { Certifications } from './components/certifications';
+import { Skill } from './components/skills-list';
 
 function App() {
     const [showSplash, setShowSplash] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <Footer />
         <Experience />
         <Certifications />
+        <Skill />
         {/* 
         <Skills />
         <Certifications />

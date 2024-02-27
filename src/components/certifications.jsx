@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { cn } from "../utils/cn";
 
 export const Certifications = ({
-  items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
@@ -87,13 +86,14 @@ export const Certifications = ({
 
   const getSpeed = () => {
     if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
+      containerRef.current.style.setProperty("--animation-duration", "45s");
+      // if (speed === "fast") {
+      //   containerRef.current.style.setProperty("--animation-duration", "40s");
+      // } else if (speed === "normal") {
+      //   containerRef.current.style.setProperty("--animation-duration", "40s");
+      // } else {
+      //   containerRef.current.style.setProperty("--animation-duration", "80s");
+      // }
     }
   };
 
@@ -122,7 +122,7 @@ export const Certifications = ({
         >
           {certifications.map((certification, index) => (
             <li
-              className={`bg-white w-[350px] max-w-full relative rounded-xl border border-b-0 flex-shrink-0  px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  transition-transform duration-300 transform object-cover grayscale hover:grayscale-0 ease-in-out ${
+              className={`bg-white w-[350px] max-w-full relative rounded-xl border hover:border-b-0 flex-shrink-0  px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  transition-transform duration-300 transform object-cover grayscale hover:grayscale-0 ease-in-out ${
                 hoveredIndex === index ? "scale-110" : "scale-100"
               }`}
               style={{ cursor: 'pointer', zIndex: hoveredIndex === index ? 1 : 0 }}
