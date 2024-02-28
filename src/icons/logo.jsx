@@ -1,4 +1,4 @@
-const Logo = (props) => (
+const Logo = props => (
   <svg
     width={99}
     height={54}

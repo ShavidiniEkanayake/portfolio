@@ -1,6 +1,8 @@
-import React, { useState, useRef, Fragment } from "react";
-import { Logo } from "../icons";
-import { X } from "lucide-react";
+import React, { Fragment, useRef, useState } from 'react';
+
+import { X } from 'lucide-react';
+
+import { Logo } from '../icons';
 
 export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,24 +14,24 @@ export const NavBar = () => {
 
   const nav = [
     {
-      path: "#",
-      label: "About me",
+      path: '#',
+      label: 'About me',
     },
     {
-      path: "#",
-      label: "Experience",
+      path: '#',
+      label: 'Experience',
     },
     {
-      path: "#",
-      label: "Projects",
+      path: '#',
+      label: 'Projects',
     },
     {
-      path: "#",
-      label: "Skills",
+      path: '#',
+      label: 'Skills',
     },
     {
-      path: "#",
-      label: "Certificates",
+      path: '#',
+      label: 'Certificates',
     },
   ];
 
@@ -81,7 +83,7 @@ export const NavBar = () => {
 
       <div
         className={`fixed inset-0 bg-white transition-all duration-700 z-[60] ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
         <div className="flex flex-col h-full justify-center items-center m-6 font-Satoshi uppercase text-3xl gap-6">

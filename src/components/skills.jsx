@@ -1,53 +1,53 @@
-import React, { useState } from "react";
-import { ReactI } from "../icons";
+import React, { useState } from 'react';
+
 import {
+  MotionValue,
   motion,
   useScroll,
-  useTransform,
   useSpring,
-  MotionValue,
-} from "framer-motion";
+  useTransform,
+} from 'framer-motion';
 
 export const Skills = ({ skills }) => {
-  const firstRow = skills.slice(0, 10);
+  const firstRow = skills.slice(0, 20);
   const secondRow = skills.slice(10, 20);
   const thirdRow = skills.slice(10, 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start'],
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
-    springConfig
+    springConfig,
   );
   const translateXReverse = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, -1000]),
-    springConfig
+    springConfig,
   );
-  const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig
-  );
-  const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-    springConfig
-  );
-  const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-    springConfig
-  );
+  //   const rotateX = useSpring(
+  //     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+  //     springConfig
+  //   );
+  //   const opacity = useSpring(
+  //     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+  //     springConfig
+  //   );
+  //   const rotateZ = useSpring(
+  //     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+  //     springConfig
+  //   );
   const translateY = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
-    springConfig
+    springConfig,
   );
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-56 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[200vh] py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <div className="container">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">Skills</h1>
@@ -55,15 +55,15 @@ export const Skills = ({ skills }) => {
 
       <motion.div
         style={{
-          rotateX,
-          rotateZ,
+          //   rotateX,
+          //   rotateZ,
           translateY,
-          opacity,
+          //   opacity,
         }}
         className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
+          {firstRow.map(product => (
             <ProductCard
               product={product}
               translate={translateX}
@@ -72,7 +72,7 @@ export const Skills = ({ skills }) => {
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
+          {secondRow.map(product => (
             <ProductCard
               product={product}
               translate={translateXReverse}
@@ -81,7 +81,7 @@ export const Skills = ({ skills }) => {
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
+          {thirdRow.map(product => (
             <ProductCard
               product={product}
               translate={translateX}
@@ -104,12 +104,9 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-20 w-20 relative flex-shrink-0 bg-black"
+      className="group/product h-20 w-20 relative flex-shrink-0 "
     >
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100">
-        {product.title}
-      </h2>
+      <div>{product.img}</div>
     </motion.div>
   );
 };

@@ -1,5 +1,7 @@
-import React from "react";
-import { Skills } from  "./skills";
+import React from 'react';
+
+import { ReactIcon } from '../icons';
+import { Skills } from './skills';
 
 export function Skill() {
   return <Skills skills={skills} />;
@@ -7,57 +9,75 @@ export function Skill() {
 
 export const skills = [
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
   {
-    title: "Moonbeam"
+    title: 'Moonbeam',
+    img: <ReactIcon />,
   },
   {
-    title: "Cursor"
+    title: 'Cursor',
+    img: <ReactIcon />,
   },
   {
-    title: "E Free Invoice"
+    title: 'E Free Invoice',
+    img: <ReactIcon />,
   },
 ];

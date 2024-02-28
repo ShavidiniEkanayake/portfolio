@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const AboutMe = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -15,11 +15,11 @@ export const AboutMe = () => {
       requestId = requestAnimationFrame(updateRotation);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     updateRotation();
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
       cancelAnimationFrame(requestId);
     };
   }, []);
