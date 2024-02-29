@@ -5,7 +5,7 @@ import {
   CardContainer,
   CardItem,
   useMouseEnter,
-} from './project-grid';
+} from './core/project-grid';
 
 export const Projects = () => {
   return (

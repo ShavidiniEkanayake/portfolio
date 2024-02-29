@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../public/fonts/satoshi.ttf');
+  }
+  
+  @font-face {
+    font-family: 'SatoshiItalic';
+    src: url('../public/fonts/satoshi-variableItalic.ttf');
+  }

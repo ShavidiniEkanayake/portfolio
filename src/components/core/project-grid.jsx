@@ -6,7 +6,7 @@ import React, {
   useState,
 } from 'react';
 
-import { cn } from '../utils/cn';
+import { cn } from '../../utils/cn';
 
 export const BentoGrid = ({ className, children }) => {
   return (

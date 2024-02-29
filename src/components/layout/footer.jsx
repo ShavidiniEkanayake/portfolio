@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Logo } from '../icons';
-import { Heart } from '../icons';
+import { Logo } from '../../icons';
+import { Heart } from '../../icons';
 
 export const Footer = () => {
   return (

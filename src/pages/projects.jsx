@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { cn } from '../utils/cn';
-import { BentoGrid, BentoGridItem } from './project-grid';
+import { BentoGrid, BentoGridItem } from '../components/core/project-grid';
 
 export const Projects = () => {
   const Skeleton = () => (

@@ -1,3 +1,10 @@
+import {
+  CardBody,
+  CardContainer,
+  CardItem,
+  useMouseEnter,
+} from './core/project-grid';
+
 export const Home = () => {
   return (
     <div className="h-[calc(100vh-5rem)] bg-bgorange relative">

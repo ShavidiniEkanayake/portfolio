@@ -2,7 +2,7 @@ import React, { Fragment, useRef, useState } from 'react';
 
 import { X } from 'lucide-react';
 
-import { Logo } from '../icons';
+import { Logo } from '../../icons';
 
 export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);

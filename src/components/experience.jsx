@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../style.css';
+import { BackgroundBeams } from "./core/background-beams";
 
 export const Experience = () => {
   return (

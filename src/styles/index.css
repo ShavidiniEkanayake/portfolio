@@ -1,11 +1,8 @@
+@import 'fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../public/fonts/satoshi.ttf');
-}
 
 @layer utilities {
   @variants responsive {

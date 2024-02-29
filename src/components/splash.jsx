@@ -1,15 +1,29 @@
 import React from 'react';
 
-import '../style.css';
+import { TypewriterEffectSmooth } from './core/typewriter-effect';
 
 export const Splash = () => {
+  const words = [
+    {
+      text: "Shavidini",
+    },
+    {
+      text: "Ekanayake",
+    },
+    {
+      text: "is",
+      className: "text-orange font-SatoshiItalic font-bold",
+    },
+    {
+      text: "a",
+    }
+  ];
+
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="text-center  text-7xl word">
-        <span className="font-Satoshi font-bold">Shavidini Ekanayake</span>{' '}
-        <span className="text-orange font-SatoshiI font-bold">is</span>{' '}
-        <span className="font-Satoshi font-bold">a</span>
-      </div>
+
+      <TypewriterEffectSmooth words={words} className={"flex items-center justify-center h-screen"}/>
+
     </div>
   );
 };
