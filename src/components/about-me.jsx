@@ -25,25 +25,27 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <div className="container max-w-3xl">
-      <div className="flex flex-col items-center justify-center min-h-screen gap-10 py-20">
-        <div className="flex flex-col gap-6 text-center">
-          <span className="text-lg font-Satoshi">Hi!, I am Shavi</span>
-          <span className="text-lg font-Satoshi">
-            I have vast knowledge offull-stack application development and am
-            well-experienced in all aspects of the software development
-            lifecycle and end-to-end project management from concept to
-            practice.
-          </span>
+    <div>
+      <div className="container max-w-3xl">
+        <div className="flex flex-col items-center justify-center min-h-screen gap-10 py-20">
+          <div className="flex flex-col gap-6 text-center">
+            <span className="text-xl font-Satoshi font-semibold">
+              Hi!, I am <span className="text-red-500">Shavi</span>
+            </span>
+            <span className="text-lg font-Satoshi">
+              I have vast knowledge offull-stack application development and am
+              well-experienced in all aspects of the software development
+              lifecycle and end-to-end project management from concept to
+              practice.
+            </span>
+          </div>
+          <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
+            <img src="./images/profile.png" alt="" className="bg-cover" />
+          </div>
         </div>
-        <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
-          <img
-            src="./images/profile.png"
-            alt=""
-            className="bg-cover -rotate-45"
-            style={{ transform: `rotate(${scrollY * -0.01}deg)` }}
-          />
-        </div>
+      </div>
+      <div class="relative flex justify-end">
+        <div class="h-[0.15rem] w-1/2 bg-gradient-to-r from-white via-orange to-orange mb"></div>
       </div>
     </div>
   );

@@ -1,0 +1,10 @@
+export { AboutMe } from './about-me';
+export { Certifications } from './certifications';
+export { Contact } from './contact';
+export { Experience } from './experience';
+export { Footer } from './layout/footer';
+export { Hero } from './hero';
+export { NavBar } from './layout/navbar';
+export { Projects } from './projects';
+export { Skills } from './skills';
+export { Splash } from './splash';

@@ -1,12 +1,6 @@
-import React, {
-  createContext,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
-import { cn } from '../../utils/cn';
+import { cn } from '@/utils/cn';
 
 export const BentoGrid = ({ className, children }) => {
   return (
@@ -49,19 +43,13 @@ export const BentoGridItem = ({
   );
 };
 
-const MouseEnterContext = createContext(
-  undefined
-);
+const MouseEnterContext = createContext(undefined);
 
-export const CardContainer = ({
-  children,
-  className,
-  containerClassName,
-}) => {
+export const CardContainer = ({ children, className, containerClassName }) => {
   const containerRef = useRef(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = e => {
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
@@ -70,12 +58,12 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
-  const handleMouseEnter = (e) => {
+  const handleMouseEnter = e => {
     setIsMouseEntered(true);
     if (!containerRef.current) return;
   };
 
-  const handleMouseLeave = (e) => {
+  const handleMouseLeave = e => {
     if (!containerRef.current) return;
     setIsMouseEntered(false);
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
@@ -84,11 +72,11 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "pb-8 flex items-center justify-center",
-          containerClassName
+          'pb-8 flex items-center justify-center',
+          containerClassName,
         )}
         style={{
-          perspective: "1000px",
+          perspective: '1000px',
         }}
       >
         <div
@@ -97,11 +85,11 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
-            className
+            'flex items-center justify-center relative transition-all duration-200 ease-linear',
+            className,
           )}
           style={{
-            transformStyle: "preserve-3d",
+            transformStyle: 'preserve-3d',
           }}
         >
           {children}
@@ -111,15 +99,12 @@ export const CardContainer = ({
   );
 };
 
-export const CardBody = ({
-  children,
-  className,
-}) => {
+export const CardBody = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "h-96 w-full lg:w-[19rem] [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
-        className
+        'h-96 w-full lg:w-[19rem] [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]',
+        className,
       )}
     >
       {children}
@@ -128,7 +113,7 @@ export const CardBody = ({
 };
 
 export const CardItem = ({
-  as: Tag = "div",
+  as: Tag = 'div',
   children,
   className,
   translateX = 0,
@@ -158,7 +143,7 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={cn("w-fit transition duration-200 ease-linear", className)}
+      className={cn('w-fit transition duration-200 ease-linear', className)}
       {...rest}
     >
       {children}
@@ -170,7 +155,7 @@ export const CardItem = ({
 export const useMouseEnter = () => {
   const context = useContext(MouseEnterContext);
   if (context === undefined) {
-    throw new Error("useMouseEnter must be used within a MouseEnterProvider");
+    throw new Error('useMouseEnter must be used within a MouseEnterProvider');
   }
   return context;
 };

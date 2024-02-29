@@ -1,11 +1,4 @@
-import React from 'react';
-
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-  useMouseEnter,
-} from './core/project-grid';
+import { CardBody, CardContainer, CardItem } from './core/project-grid';
 
 export const Projects = () => {
   return (
@@ -14,7 +7,7 @@ export const Projects = () => {
         Projects
       </h1>
 
-      <div class="grid-cols-1 lg:grid md:grid-cols-4 md:container">
+      <div className="grid-cols-1 lg:grid md:grid-cols-4 md:container">
         <CardContainer className="inter-var flex flex-col">
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
             <CardItem translateZ="100" className="w-full mb-4">
@@ -124,7 +117,9 @@ export const Projects = () => {
         </CardContainer>
       </div>
 
-      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange">More Projects</div>
+      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange">
+        More Projects
+      </div>
     </div>
   );
 };

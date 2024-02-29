@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { Facebook } from '../icons';
-import { Github } from '../icons';
-import { Dribble } from '../icons';
+import { Dribble, Facebook, Github } from '../icons';
 
 export const Contact = () => {
   const emailAddress = 'shavidilunika10s@gmail.com';

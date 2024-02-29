@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import { useRef } from 'react';
 
-import {
-  MotionValue,
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-} from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 
-export const Skills = ({ skills }) => {
+import { skills } from './data';
+
+export const Skills = () => {
   const firstRow = skills.slice(0, 20);
   const secondRow = skills.slice(10, 20);
   const thirdRow = skills.slice(10, 15);
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start start', 'end start'],
@@ -63,29 +59,29 @@ export const Skills = ({ skills }) => {
         className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map(product => (
+          {firstRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={`row1-${product.title}-${index}`}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map(product => (
+          {secondRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={`row2-${product.title}-${index}`}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map(product => (
+          {thirdRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={`row3-${product.title}-${index}`}
             />
           ))}
         </motion.div>
@@ -106,7 +102,7 @@ export const ProductCard = ({ product, translate }) => {
       key={product.title}
       className="group/product h-20 w-20 relative flex-shrink-0 "
     >
-      <div>{product.img}</div>
+      <div>{product.img()}</div>
     </motion.div>
   );
 };

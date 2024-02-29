@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from '../utils/cn';
+import { cn } from '@/utils/cn';
 
 export const Certifications = ({
   direction = 'left',
@@ -42,8 +42,8 @@ export const Certifications = ({
     },
   ];
 
-  const containerRef = React.useRef(null);
-  const scrollerRef = React.useRef(null);
+  const containerRef = useRef(null);
+  const scrollerRef = useRef(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
@@ -99,7 +99,7 @@ export const Certifications = ({
   };
 
   return (
-    <div>
+    <div className='my-20'>
       <div className="container mt-20 mb-10">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">
           Certifications

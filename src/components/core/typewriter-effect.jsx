@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 
+import { cn } from '@/utils/cn';
 import { motion, stagger, useAnimate, useInView } from 'framer-motion';
-
-import { cn } from '../../utils/cn';
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   const wordsArray = words.map(word => {
@@ -91,79 +90,81 @@ export const TypewriterEffectSmooth = ({
   className,
   cursorClassName,
 }) => {
+  const wordsArray = words.map(word => {
+    return {
+      ...word,
+      text: word.text.split(''),
+    };
+  });
 
-    const wordsArray = words.map((word) => {
-        return {
-          ...word,
-          text: word.text.split(""),
-        };
-      });
-
-      const renderWords = () => {
-        return (
-          <div>
-            {wordsArray.map((word, idx) => {
-              return (
-                <div key={`word-${idx}`} className="inline-block items-center justify-center">
-                  {word.text.map((char, index) => (
-                    <span
-                      key={`char-${index}`}
-                      className={cn(`dark:text-white text-black `, word.className)}
-                    >
-                      {char}
-                    </span>
-                  ))}
-                  &nbsp;
-                </div>
-              );
-            })}
-          </div>
-        );
-      };
-
-      return (
-        <div className={cn("flex space-x-1 my-6", className)}>
-          <motion.div
-            className="overflow-hidden pb-2"
-            initial={{
-              width: "0%",
-            }}
-            whileInView={{
-              width: "fit-content",
-            }}
-            transition={{
-              duration: 2,
-              ease: "linear",
-              delay: 1,
-            }}
-          >
+  const renderWords = () => {
+    return (
+      <div>
+        {wordsArray.map((word, idx) => {
+          return (
             <div
-              className="text-2xl sm:text-xl md:text-6xl lg:text:3xl xl:text-7xl font-black font-Satoshi"
-              style={{
-                whiteSpace: "nowrap",
-              }}
+              key={`word-${idx}`}
+              className="inline-block items-center justify-center"
             >
-              {renderWords()}{" "}
-            </div>{" "}
-          </motion.div>
-          <motion.span
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.8,
-     
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-            className={cn(
-              "block rounded-sm w-[3px] md:w-[4.5px]  h-[1.5rem] sm:h-14 xl:h-16 bg-orange",
-              cursorClassName
-            )}
-          ></motion.span>
-        </div>
-      );
+              {word.text.map((char, index) => (
+                <span
+                  key={`char-${index}`}
+                  className={cn(`dark:text-white text-black `, word.className)}
+                >
+                  {char}
+                </span>
+              ))}
+              &nbsp;
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  return (
+    <div className={cn('flex space-x-1 my-6', className)}>
+      <motion.div
+        className="overflow-hidden pb-2"
+        initial={{
+          width: '0%',
+        }}
+        whileInView={{
+          width: 'fit-content',
+        }}
+        transition={{
+          duration: 2,
+          ease: 'linear',
+          delay: 1,
+        }}
+      >
+        <div
+          className="text-2xl sm:text-xl md:text-6xl lg:text:3xl xl:text-7xl font-black font-Satoshi"
+          style={{
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {renderWords()}{' '}
+        </div>{' '}
+      </motion.div>
+      <motion.span
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.8,
+
+          repeat: Infinity,
+          repeatType: 'reverse',
+        }}
+        className={cn(
+          'block rounded-sm w-[3px] md:w-[4.5px]  h-[1.5rem] sm:h-14 xl:h-16 bg-orange',
+          cursorClassName,
+        )}
+      ></motion.span>
+    </div>
+  );
 };
