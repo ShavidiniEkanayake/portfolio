@@ -8,11 +8,14 @@ import {
   Hero,
   Projects,
   Skills,
-  Splash
+  Splash,
 } from '@/components';
 
+import { Footer } from '../components/layout/footer';
+import { NavBar } from '../components/layout/navbar';
+
 function Home() {
-    const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -24,20 +27,22 @@ function Home() {
 
   return (
     <div>
-    {showSplash ? (
-      <Splash />
-    ) : (
-      <>
-        <Hero />
-        <AboutMe />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Skills />
-        <Contact />
-      </>
-    )}
-  </div>
+      {showSplash ? (
+        <Splash />
+      ) : (
+        <>
+          <NavBar />
+          <Hero />
+          <AboutMe />
+          <Experience />
+          <Projects />
+          <Certifications />
+          <Skills />
+          <Contact />
+          <Footer />
+        </>
+      )}
+    </div>
   );
 }
 

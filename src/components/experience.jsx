@@ -96,31 +96,31 @@ export const Experience = () => {
   // );
 
   return (
-    <div className="container">
+    <div className="container mt-32">
       {/* <h1 className="font-Satoshi font-black text-6xl text-center mb-20 mt-10">Experience</h1> */}
 
-      <div className="md:flex items-start my-10">
-        <h1 className="font-Satoshi font-black text-[2.8rem]  w-52">
+      <div className="lg:flex items-start my-10">
+        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
           Education
         </h1>
         <TracingBeam className="">
-          <div className=" antialiased pt-4 relative">
+          <div className=" antialiased relative">
             {education.map((item, index) => (
               <div key={`content-${index}`} className="mb-20">
-                <div className="flex gap-3">
-                  <h1 className="h-9 px-3 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-xl">
+                <div className="flex gap-3 mt-1">
+                  <h1 className="h-9 px-3 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-sm md:text-xl">
                     {item.number}
                   </h1>
-                  <h1 className="font-Satoshi font-black text-3xl uppercase">
+                  <h1 className="font-Satoshi font-black text-xl md:text-3xl uppercase">
                     {item.location}
                   </h1>
                 </div>
 
-                <h1 className="text-[#5A5A5A] font-Satoshi font-medium text-lg my-3 ml-16">
+                <h1 className="text-[#5A5A5A] font-Satoshi font-medium md:text-lg my-3 ml-16">
                   {' '}
                   {item.range}
                 </h1>
-                <h1 className="text-[#5A5A5A] font-Satoshi font-medium text-lg my-3 ml-16">
+                <h1 className="text-[#5A5A5A] font-Satoshi font-medium md:text-lg my-3 ml-16">
                   {item.other}
                 </h1>
               </div>
@@ -129,34 +129,34 @@ export const Experience = () => {
         </TracingBeam>
       </div>
 
-      <div className="md:flex items-start my-10">
-        <h1 className="font-Satoshi font-black text-[2.8rem] w-52">
+      <div className="lg:flex items-start my-10">
+        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
           Work
         </h1>
-        <TracingBeam className="px-6">
-          <div className=" antialiased pt-4 relative">
+        <TracingBeam className="">
+          <div className=" antialiased relative">
             {work.map((item, index) => (
               <div key={`content-${index}`} className="mb-20">
-                <div className="flex gap-3">
-                  <h1 className="h-9 px-3 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-xl">
+                <div className="flex gap-3 mt-1">
+                  <h1 className="h-9 px-3 bg-black rounded-full flex items-center justify-center text-white font-Satoshi font-black text-sm md:text-xl">
                     {item.number}
                   </h1>
-                  <h1 className="font-Satoshi font-black text-3xl uppercase">
+                  <h1 className="font-Satoshi font-black text-xl md:text-3xl uppercase">
                     {item.location}
                   </h1>
                 </div>
 
-                <h1 className="text-[#5A5A5A] font-Satoshi font-bold text-lg my-3 ml-16">
+                <h1 className="text-[#5A5A5A] font-Satoshi font-bold md:text-lg my-3 ml-16">
                   {item.occupation}
                 </h1>
-                <h1 className="text-[#939393]  font-Satoshi font-medium text-lg my-3 ml-16">
+                <h1 className="text-[#939393]  font-Satoshi font-medium md:text-lg my-3 ml-16">
                   {' '}
                   {item.range}
                 </h1>
-                <h1 className="text-[#939393] font-Satoshi font-medium text-lg my-3 ml-16">
+                <h1 className="text-[#939393] font-Satoshi font-medium md:text-lg my-3 ml-16">
                   {item.other1}
                 </h1>
-                <h1 className="text-[#939393]  font-Satoshi font-medium text-lg my-3 ml-16">
+                <h1 className="text-[#939393]  font-Satoshi font-medium md:text-lg my-3 ml-16">
                   {' '}
                   {item.other2}
                 </h1>

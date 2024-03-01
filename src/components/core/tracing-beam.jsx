@@ -45,7 +45,7 @@ export const TracingBeam = ({
       },
       React.createElement(
         "div",
-        { className: "absolute -left-4 -left-20 top-3" },
+        { className: "absolute lg:-left-20 md:-left-3 -left-4 top-3" },
         React.createElement(
           motion.div,
           {
@@ -105,7 +105,7 @@ export const TracingBeam = ({
               d: `M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`,
               fill: "none",
               stroke: "url(#gradient)",
-              strokeWidth: "1.25",
+              strokeWidth: "3",
               className: "motion-reduce:hidden",
               transition: {
                 duration: 10,
@@ -128,7 +128,7 @@ export const TracingBeam = ({
               React.createElement("stop", { stopColor: "#FF2E00", stopOpacity: "0" }),
               React.createElement("stop", { stopColor: "#FF2E00" }),
               React.createElement("stop", { offset: "0.325", stopColor: "#FF2E00" }),
-              React.createElement("stop", { offset: "1", stopColor: "#AE48FF", stopOpacity: "0" })
+              React.createElement("stop", { offset: "1", stopColor: "#ffffff", stopOpacity: "0" })
             )
           )
         )
