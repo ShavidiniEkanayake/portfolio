@@ -99,7 +99,7 @@ export const Certifications = ({
   };
 
   return (
-    <div className='my-20'>
+    <div className="my-20" id='certifications'>
       <div className="container mt-20 mb-10">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">
           Certifications
@@ -123,26 +123,20 @@ export const Certifications = ({
         >
           {certifications.map((certification, index) => (
             <li
-              className={`bg-white w-[350px] max-w-full relative rounded-xl border hover:border-b-0 flex-shrink-0  px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  transition-transform duration-300 transform object-cover grayscale hover:grayscale-0 ease-in-out ${
+              className={`bg-white w-[350px] max-w-full relative rounded-xl border hover:border-b-0 flex-shrink-0  px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  hover:transition-transform duration-300 e ease-in-out ${
                 hoveredIndex === index ? 'scale-110' : 'scale-100'
               }`}
-              style={{
-                cursor: 'pointer',
-                zIndex: hoveredIndex === index ? 1 : 0,
-              }}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               key={certification.name}
             >
               <blockquote>
                 <div
                   aria-hidden="true"
-                  className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                  className="user-select-none pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%+_4px)] w-[calc(100%+_4px)]"
                 ></div>
                 <img
                   src={certification.image}
                   alt={certification.name}
-                  className="w-24 h-24 mx-auto mb-4"
+                  className="w-24 h-24 mx-auto mb-4 hover:grayscale transition-all duration-300"
                 />
                 <p className="font-Satoshi font-semibold text-lg text-center">
                   {certification.name}

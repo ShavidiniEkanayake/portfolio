@@ -21,7 +21,7 @@ export const Skills = () => {
     springConfig,
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(scrollYProgress, [0, 2], [3, -1000]),
     springConfig,
   );
   //   const rotateX = useSpring(
@@ -37,13 +37,14 @@ export const Skills = () => {
   //     springConfig
   //   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [10, 0.1], [-700, 100]),
     springConfig,
   );
   return (
     <div
+    id='skills'
       ref={ref}
-      className="h-[200vh] py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[calc(100vh-5rem)] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <div className="container">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">Skills</h1>

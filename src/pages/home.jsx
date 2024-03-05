@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
 
 import {
   AboutMe,
@@ -28,7 +29,7 @@ function Home() {
   return (
     <div>
       {showSplash ? (
-        <Splash />
+            <Splash />
       ) : (
         <>
           <NavBar />

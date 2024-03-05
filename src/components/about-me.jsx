@@ -25,7 +25,7 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <div>
+    <div id="aboutMe">
       <div className="container max-w-3xl">
         <div className="flex flex-col items-center justify-center min-h-screen gap-10 py-20">
           <div className="flex flex-col gap-6 text-center">

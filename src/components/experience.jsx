@@ -96,10 +96,10 @@ export const Experience = () => {
   // );
 
   return (
-    <div className="container mt-32">
+    <div className="container mt-32" id='experience'>
       {/* <h1 className="font-Satoshi font-black text-6xl text-center mb-20 mt-10">Experience</h1> */}
 
-      <div className="lg:flex items-start my-10">
+      <div className="lg:flex items-start mb-10">
         <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
           Education
         </h1>
@@ -129,7 +129,7 @@ export const Experience = () => {
         </TracingBeam>
       </div>
 
-      <div className="lg:flex items-start my-10">
+      <div className="lg:flex items-start">
         <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
           Work
         </h1>

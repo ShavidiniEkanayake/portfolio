@@ -14,25 +14,25 @@ export const NavBar = () => {
 
   const nav = [
     {
-      path: '#',
+      path: '#aboutMe',
       label: 'About me',
     },
     {
-      path: '#',
+      path: '#experience',
       label: 'Experience',
     },
     {
-      path: '#',
+      path: '#projects',
       label: 'Projects',
     },
     {
-      path: '#',
-      label: 'Skills',
-    },
-    {
-      path: '#',
+      path: '#certifications',
       label: 'Certificates',
     },
+    {
+      path: '#skills',
+      label: 'Skills',
+    }
   ];
 
   return (

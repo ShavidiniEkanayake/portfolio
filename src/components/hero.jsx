@@ -1,8 +1,20 @@
 import { BackgroundGradient } from './core/background-gradient';
+import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <BackgroundGradient>
+    <motion.div
+      className="box"
+      initial={{ opacity: 0.5, scale: 0.999 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        ease: 'linear',
+        duration: 1,
+        x: { duration: 0 },
+        y: { duration: 0 },
+      }}
+    >
+     <BackgroundGradient>
       <div className="h-[calc(100vh-5rem)] absolute z-50 inset-0 flex items-center justify-center px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
         <div className="h-[calc(100vh-5rem)] bg-bgorange relative">
           <div className="absolute inset-0 flex justify-center items-center">
@@ -22,6 +34,8 @@ export const Hero = () => {
         
       </div>
     </BackgroundGradient>
+    </motion.div>
+    
     // <div className="h-[calc(100vh-5rem)] bg-bgorange relative">
     //   <div className="absolute inset-0 flex justify-center items-center">
     //     <div className="bg-black rounded-full aspect-square h-[min(calc(100%-8rem),calc(100vw-8rem))]" />
