@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import { motion } from 'framer-motion';
+
 export const AboutMe = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -39,13 +41,24 @@ export const AboutMe = () => {
               practice.
             </span>
           </div>
-          <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
-            <img src="./images/profile.png" alt="" className="bg-cover" />
-          </div>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
+              <img src="./images/profile.png" alt="" className="bg-cover" />
+            </div>
+          </motion.div>
         </div>
       </div>
-      <div class="relative flex justify-end">
-        <div class="h-[0.15rem] w-1/2 bg-gradient-to-r from-white via-orange to-orange mb"></div>
+      <div className="relative flex justify-end">
+        <div className="h-[0.15rem] w-1/2 bg-gradient-to-r from-white via-orange to-orange mb"></div>
       </div>
     </div>
   );
