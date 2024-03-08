@@ -6,8 +6,8 @@ import { skills } from './data';
 
 export const Skills = () => {
   const firstRow = skills.slice(0, 20);
-  const secondRow = skills.slice(10, 20);
-  const thirdRow = skills.slice(10, 15);
+  const secondRow = skills.slice(5, 25);
+  const thirdRow = skills.slice(3, 30);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -59,7 +59,7 @@ export const Skills = () => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16 mb-20">
           {firstRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -68,7 +68,7 @@ export const Skills = () => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-20 space-x-16 ">
           {secondRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -77,7 +77,7 @@ export const Skills = () => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16">
           {thirdRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -101,7 +101,7 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-20 w-20 relative flex-shrink-0 "
+      className="group/product h-[4.5rem] w-[4rem] relative flex-shrink-0 "
     >
       <div>{product.img()}</div>
     </motion.div>

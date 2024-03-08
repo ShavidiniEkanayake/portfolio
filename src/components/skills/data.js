@@ -1,76 +1,83 @@
-import { ReactIcon, Node } from '../../icons';
+import { ReactIcon, Node, Js,MongoDB, Tailwind,Photoshop, Html, Sass, MySql,Illustrator, Bootstrap, Figma, Next, Webflow, XD, CSS,Express, Canva, Postman} from '../../icons';
 
 export const skills = [
+ 
+  {
+    title: 'HTML',
+    img: Html,
+  },
+  {
+    title: 'My SQL',
+    img: MySql,
+  },
+  {
+    title: 'SASS',
+    img: Sass,
+  },
+  {
+    title: 'Illustrator',
+    img: Illustrator,
+  },
+  {
+    title: 'Bootstrap',
+    img: Bootstrap,
+  },
+  {
+    title: 'Figma',
+    img: Figma,
+  },
   {
     title: 'Moonbeam',
     img: ReactIcon,
   },
+  
   {
     title: 'Node js',
     img: Node,
   },
   {
-    title: 'E Free Invoice',
-    img: ReactIcon,
+    title: 'Java Script',
+    img: Js,
   },
   {
-    title: 'Moonbeam',
-    img: ReactIcon,
+    title: 'Mongo DB',
+    img: MongoDB,
   },
   {
-    title: 'Cursor',
-    img: ReactIcon,
+    title: 'Tailwind CSS',
+    img: Tailwind,
   },
   {
-    title: 'E Free Invoice',
-    img: ReactIcon,
+    title: 'Photoshop',
+    img: Photoshop,
+  },
+  
+  {
+    title: 'Next',
+    img: Next,
   },
   {
-    title: 'Moonbeam',
-    img: ReactIcon,
+    title: 'Webflow',
+    img: Webflow,
   },
   {
-    title: 'Cursor',
-    img: ReactIcon,
+    title: 'Adobe XD',
+    img: XD,
   },
   {
-    title: 'E Free Invoice',
-    img: ReactIcon,
+    title: 'CSS',
+    img: CSS,
   },
   {
-    title: 'Moonbeam',
-    img: ReactIcon,
+    title: 'Express',
+    img: Express,
   },
   {
-    title: 'Cursor',
-    img: ReactIcon,
+    title: 'Canva',
+    img:  Canva,
   },
   {
-    title: 'E Free Invoice',
-    img: ReactIcon,
-  },
-  {
-    title: 'Moonbeam',
-    img: ReactIcon,
-  },
-  {
-    title: 'Cursor',
-    img: ReactIcon,
-  },
-  {
-    title: 'E Free Invoice',
-    img: ReactIcon,
-  },
-  {
-    title: 'Moonbeam',
-    img: ReactIcon,
-  },
-  {
-    title: 'Cursor',
-    img: ReactIcon,
-  },
-  {
-    title: 'E Free Invoice',
-    img: ReactIcon,
+    title: 'Postman',
+    img: Postman,
   },
 ];
