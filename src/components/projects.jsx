@@ -4,6 +4,7 @@ import loanapplication from '/images/loan-application.png';
 import todolist from '/images/todo-list.png'
 import { CardBody, CardContainer, CardItem } from './core/project-grid';
 import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const Projects = () => {
   return (
@@ -147,8 +148,10 @@ export const Projects = () => {
       </div>
 
       <div className="text-center font-Satoshi font-bold text-lg hover:text-orange">
+      <Link to="/projects" target="_blank" rel="noopener noreferrer">
         More Projects
-      </div>
+      </Link>
+    </div>
     </motion.section>
   );
 };

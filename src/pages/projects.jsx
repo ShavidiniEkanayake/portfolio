@@ -1,3 +1,6 @@
+import { Footer } from '@/components/layout/footer';
+import { NavBar } from '@/components/layout/navbar';
+
 import { BentoGrid, BentoGridItem } from '../components/core/project-grid';
 
 export const ProjectsList = () => {
@@ -46,23 +49,26 @@ export const ProjectsList = () => {
 
   return (
     <div>
+      <NavBar />
       <div className="container">
-        <h1 className="font-Satoshi font-black text-5xl md:text-6xl">
+        <h1 className="font-Satoshi font-black text-5xl md:text-6xl my-4">
           Projects
         </h1>
+
+        <BentoGrid className="my-8 ">
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              icon={item.icon}
+              className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+            />
+          ))}
+        </BentoGrid>
       </div>
-      <BentoGrid className=" mx-auto">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            icon={item.icon}
-            className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
-          />
-        ))}
-      </BentoGrid>
+      <Footer />
     </div>
   );
 };

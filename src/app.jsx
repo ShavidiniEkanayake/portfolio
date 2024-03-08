@@ -2,12 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { Home, ProjectsList } from '@/pages';
 import '@/styles/index.css';
-import {
-  MemoryRouter,
-  Route,
-  BrowserRouter as Router,
-  Routes,
-} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -21,12 +16,12 @@ function App() {
   }, []);
 
   return (
-    <MemoryRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsList />} />
       </Routes>
-    </MemoryRouter>
+    </Router>
   );
 }
 

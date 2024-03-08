@@ -8,6 +8,7 @@ import { Meteors } from './core/meteors';
 export const Hero = () => {
   return (
     <motion.div
+    id='home'
       className="box bg-bgorange"
       initial={{ opacity: 0.5, scale: 0.999 }}
       animate={{ opacity: 1, scale: 1 }}
