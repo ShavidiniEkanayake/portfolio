@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import { cn } from '@/utils/cn';
 
 export const Meteors = ({ number, className }) => {
   const meteors = new Array(number || 20).fill(true);
@@ -16,7 +15,7 @@ export const Meteors = ({ number, className }) => {
           )}
           style={{
             top: `0px`,
-            left: `${Math.floor(Math.random() * (1000 - -400) + -400)}px`,
+            left: `${Math.floor(Math.random() * (100 - 0) + 0)}vw`,
             animationDelay: `${Math.random() * (0.8 - 0.2) + 0.2}s`,
             animationDuration: `${Math.floor(Math.random() * (20 - 2) + 2)}s`,
           }}

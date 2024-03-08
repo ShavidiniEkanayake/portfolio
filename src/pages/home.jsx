@@ -12,8 +12,8 @@ import {
   Splash,
 } from '@/components';
 
-import { Footer } from '../components/layout/footer';
-import { NavBar } from '../components/layout/navbar';
+import { Footer } from '@/components/layout/footer';
+import { NavBar } from '@/components/layout/navbar';
 
 function Home() {
   const [showSplash, setShowSplash] = useState(true);

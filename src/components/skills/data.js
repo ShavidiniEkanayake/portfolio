@@ -1,4 +1,4 @@
-import { ReactIcon } from '../../icons';
+import { ReactIcon, Node } from '../../icons';
 
 export const skills = [
   {
@@ -6,8 +6,8 @@ export const skills = [
     img: ReactIcon,
   },
   {
-    title: 'Cursor',
-    img: ReactIcon,
+    title: 'Node js',
+    img: Node,
   },
   {
     title: 'E Free Invoice',

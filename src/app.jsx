@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Home, Projects } from '@/pages';
+import { Home, ProjectsList } from '@/pages';
 import '@/styles/index.css';
 import {
   MemoryRouter,
@@ -24,7 +24,7 @@ function App() {
     <MemoryRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsList />} />
       </Routes>
     </MemoryRouter>
   );

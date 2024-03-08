@@ -1,11 +1,13 @@
-import fooddelivery from '../../public/images/food-delivery.png';
-import herbland from '../../public/images/herbland.png';
-import loanapplication from '../../public/images/loan-application.png';
+import fooddelivery from '/images/food-delivery.png';
+import herbland from '/images/herbland.png';
+import loanapplication from '/images/loan-application.png';
+import todolist from '/images/todo-list.png'
 import { CardBody, CardContainer, CardItem } from './core/project-grid';
+import {motion} from 'framer-motion';
 
 export const Projects = () => {
   return (
-    <div id='projects'>
+    <motion.section id='projects'>
       <h1 className="font-Satoshi font-black text-5xl md:text-6xl text-center mb-14">
         Projects
       </h1>
@@ -15,7 +17,7 @@ export const Projects = () => {
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
             <CardItem translateZ="100" className="w-full mb-4">
               <img
-                src={herbland}
+                src={todolist}
                 height="1000"
                 width="1000"
                 className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -23,7 +25,7 @@ export const Projects = () => {
               />
             </CardItem>
             <a
-              href="https://gitlab.com/sliit-ds-project-y03s02"
+              href="https://github.com/ShavidiniEkanayake/todo-list-manager"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,7 +50,7 @@ export const Projects = () => {
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
             <CardItem translateZ="100" className="w-full mb-4">
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={fooddelivery}
                 height="1000"
                 width="1000"
                 className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -56,7 +58,7 @@ export const Projects = () => {
               />
             </CardItem>
             <a
-              href="https://gitlab.com/sliit-ds-project-y03s02"
+              href="https://github.com/ShavidiniEkanayake/foodlabs"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -122,7 +124,7 @@ export const Projects = () => {
               />
             </CardItem>
             <a
-              href="https://gitlab.com/sliit-ds-project-y03s02"
+              href="https://www.figma.com/file/6bHiZtNd7J886HEKj33E88/Loan-Application?type=design&node-id=0%3A1&mode=design&t=c6oCN8KKaI6YiCSA-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -147,6 +149,6 @@ export const Projects = () => {
       <div className="text-center font-Satoshi font-bold text-lg hover:text-orange">
         More Projects
       </div>
-    </div>
+    </motion.section>
   );
 };
