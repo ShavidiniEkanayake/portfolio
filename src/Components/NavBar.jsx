@@ -6,6 +6,24 @@ export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const navBarRef = useRef(null);
 
+  useEffect(() => {
+    if (isDarkMode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    if (navBarRef.current) {
+      setMenuWidth(navBarRef.current.clientWidth);
+    }
+  }, [isMenuOpen]);
+
+  // const handleThemeChange = () => {
+  //   setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+  // };
+
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
