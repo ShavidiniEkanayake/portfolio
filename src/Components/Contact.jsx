@@ -32,7 +32,6 @@ export const Contact = () => {
         </h1>
 
         <div className="flex justify-center space-x-4 mt-4">
-          {/* Facebook Icon */}
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
@@ -40,14 +39,12 @@ export const Contact = () => {
             onMouseEnter={() => setFacebookHovered(true)}
             onMouseLeave={() => setFacebookHovered(false)}
           >
-            <img
-              src={isFacebookHovered ? FacebookIconRed : FacebookIcon}
-              alt="Facebook"
-              className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110"
-            />
+           <img
+  src={FacebookIcon}
+  alt="Facebook"
+  className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110 filter hover:grayscale-0 hover:brightness-100"
+/>
           </a>
-
-          {/* GitHub Icon */}
           <a
             href="https://github.com/your-github-username"
             target="_blank"
@@ -61,8 +58,6 @@ export const Contact = () => {
               className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110"
             />
           </a>
-
-          {/* Dribbble Icon */}
           <a
             href="https://dribbble.com/your-dribbble-profile"
             target="_blank"

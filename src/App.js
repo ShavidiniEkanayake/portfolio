@@ -16,7 +16,6 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay for the splash screen (e.g., 2 seconds)
     const timeout = setTimeout(() => {
       setShowSplash(false);
     }, 2000);
@@ -32,11 +31,13 @@ function App() {
         <>
           <NavBar />
           <Home />
+          <AboutMe/>
+          <Experience />
           <Contact />
           <Footer />
-          {/* <AboutMe/> */}
-          {/* <Experience />
-          <Skills />
+           <Skills />
+          {/* 
+         
           <Certifications />
           <Contact />
           */}

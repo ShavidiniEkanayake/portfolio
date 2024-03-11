@@ -58,14 +58,6 @@
   }
 }
 
-body {
-  display: grid;
-  height: 100vh;
-
-  background-color: white;
-  place-items: center;
-}
-
 h1 {
   color: black;
   font-family: "Playfair Display", Vidaloka, serif;

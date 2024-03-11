@@ -10,7 +10,7 @@ export const Experience = () => {
   };
   return (
     <div className={`bg-white dark:bg-darkmode text-black mx-auto`}>
-      <div className="font-Satoshi font-black text-6xl  flex justify-end container px-28">
+      <div className="font-Satoshi font-black text-6xl  flex justify-end container">
         Experience
       </div>
 
@@ -58,7 +58,7 @@ export const Experience = () => {
         </div>
       </div>
 
-      <div className="w-full flex items-center px-28">
+      <div className="w-full flex items-center px-10">
         <div className="w-3/4">
           <div className="font-Satoshi font-black text-[2.8rem] my-6">Work</div>
 

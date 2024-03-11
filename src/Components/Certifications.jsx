@@ -1,5 +1,4 @@
-import React, { useState, useRef, useCallback, useEffect } from "react";
-import "./Certifications.css";
+import React, { useState, useRef, useCallback } from "react";
 import Microsoft from "../Assets/Logos/logos_microsoft-icon.svg";
 import Postman from "../Assets/Logos/Postman - Postman API Fundamentals Student Expert - 2022-12-24.png";
 import Scrum from "../Assets/Logos/CertiProf-Scrum-Foundation.png";

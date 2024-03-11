@@ -1,163 +1,108 @@
-import React, {useState, useEffect, useRef } from "react";
-import ShaviLogo from "../Assets/Logos/Shavi-logo.svg";
+import React, { useState, useRef, Fragment } from "react";
+import { Logo } from "../icons";
+import { X } from "lucide-react";
 
 export const NavBar = () => {
-  const [isDarkMode, setDarkMode] = useState("light");
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [menuWidth, setMenuWidth] = useState(null);
   const navBarRef = useRef(null);
-
-  useEffect(() => {
-    if (isDarkMode === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-
-  useEffect(() => {
-    if (navBarRef.current) {
-      setMenuWidth(navBarRef.current.clientWidth);
-    }
-  }, [isMenuOpen]);
-
-  const handleThemeChange = () => {
-    setDarkMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
-  };
 
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const nav = [
+    {
+      path: "#",
+      label: "About me",
+    },
+    {
+      path: "#",
+      label: "Experience",
+    },
+    {
+      path: "#",
+      label: "Projects",
+    },
+    {
+      path: "#",
+      label: "Skills",
+    },
+    {
+      path: "#",
+      label: "Certificates",
+    },
+  ];
+
   return (
-    <div>
-       <div
-        ref={navBarRef}
-        className={`bg-white dark:bg-darkmode text-black px-28 relative`}
-      >
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <img src={ShaviLogo} alt="Logo" className="h-16" />
-            <div className="hidden lg:flex items-center space-x-7">
-              <a
-                href="#"
-                className="hover:text-orange dark:text-white font-Satoshi font-semibold text-lg ml-10"
-              >
-                About me
-              </a>
-              <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
-              <a
-                href="#"
-                className="hover:text-orange font-Satoshi font-semibold text-lg"
-              >
-                Experience
-              </a>
-              <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
-              <a
-                href="#"
-                className="hover:text-orange  font-Satoshi font-semibold text-lg"
-              >
-                Projects
-              </a>
-              <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
-              <a
-                href="#"
-                className="hover:text-orange  font-Satoshi font-semibold text-lg"
-              >
-                Skills
-              </a>
-              <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
-              <a
-                href="#"
-                className="hover:text-orange  font-Satoshi font-semibold text-lg"
-              >
-                Certificates
-              </a>
-              <span className="inline-block w-2 h-2 bg-black rounded-full mx-2"></span>
-              <a
-                href="#"
-                className="hover:text-orange  font-Satoshi font-semibold text-lg"
-              >
-                Contact Me
-              </a>
+    <>
+      <header className="bg-white/90 backdrop-blur dark:bg-darkmode border-b border-black/5 sticky top-0 z-50">
+        <div ref={navBarRef} className="container">
+          <div className="flex justify-between items-center min-h-20">
+            <div className="flex items-center gap-10">
+              <Logo className="w-16 lg:w-20 h-9 lg:h-12" />
+              <div className="hidden lg:flex items-center gap-6">
+                {nav.map((item, index) => (
+                  <Fragment key={index}>
+                    <a
+                      href={item.path}
+                      className="hover:text-orange dark:text-white font-Satoshi font-semibold text-lg"
+                    >
+                      {item.label}
+                    </a>
+                    <span className="inline-block w-[.375rem] h-[.375rem] bg-black rounded-full last:hidden" />
+                  </Fragment>
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="flex items-center space-x-4 lg:hidden">
-            <button onClick={handleMenuToggle}>
-              <svg
-                className="h-6 w-6 text-black dark:text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div className="hidden lg:flex items-center space-x-4">
-            <button className="bg-orange rounded-2xl text-white font-Satoshi font-bold px-5 py-1">
+            <div className="flex items-center space-x-4 lg:hidden">
+              <button onClick={handleMenuToggle}>
+                <svg
+                  className="h-6 w-6 text-black dark:text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button className="bg-orange rounded-full text-white font-Satoshi font-bold px-3 py-1 hidden lg:block">
               Say Hello!
             </button>
-            {/* <button className='bg-slate-700 rounded-2xl' onClick={handleThemeChange}>
-                        {isDarkMode === "dark" ? "Light mode" : "Dark mode"}
-                    </button> */}
           </div>
         </div>
-      </div>
-      {isMenuOpen && menuWidth && (
-        <div
-        className="lg:hidden bg-white dark:bg-darkmode text-black py-2 px-20 absolute top-16 z-50 xs:h-[calc(100vh-90px-46px)]"
-        style={{ width: `${menuWidth}px` }}
+      </header>
+
+      <div
+        className={`fixed inset-0 bg-white transition-all duration-700 z-[60] ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
-        <div className="flex flex-col ml-10">
+        <div className="flex flex-col h-full justify-center items-center m-6 font-Satoshi uppercase text-3xl gap-6">
+          {nav.map((item, index) => (
             <a
-              href="#"
-              className="hover:text-orange dark:text-white font-Satoshi font-semibold text-lg py-2"
+              key={index}
+              href={item.path}
+              className="hover:text-orange dark:text-white"
             >
-              About me
+              {item.label}
             </a>
-            <a
-              href="#"
-              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
-            >
-              Experience
-            </a>
-            <a
-              href="#"
-              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
-            >
-              Projects
-            </a>
-            <a
-              href="#"
-              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
-            >
-              Skills
-            </a>
-            <a
-              href="#"
-              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
-            >
-              Certificates
-            </a>
-            <a
-              href="#"
-              className="hover:text-orange font-Satoshi font-semibold text-lg py-2"
-            >
-              Contact Me
-            </a>
-          </div>
+          ))}
         </div>
-      )}
-      <hr className="border-gray-300" />
-    </div>
+        <span className="fixed flex justify-center bottom-10 left-0 right-0">
+          <X
+            role="banner"
+            onClick={handleMenuToggle}
+            className="text-black/40 w-6 h-6"
+          />
+        </span>
+      </div>
+    </>
   );
 };
