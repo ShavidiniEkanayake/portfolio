@@ -74,9 +74,9 @@ export const NavBar = () => {
                 </svg>
               </button>
             </div>
-            <button className="bg-orange rounded-full text-white font-Satoshi font-bold px-3 py-1 hidden lg:block">
+            <a className="bg-orange rounded-full text-white font-Satoshi font-bold px-3 py-1 hidden lg:block" href="#contact-me">
               Say Hello!
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -92,6 +92,7 @@ export const NavBar = () => {
               key={index}
               href={item.path}
               className="hover:text-orange dark:text-white"
+              onClick={handleMenuToggle}
             >
               {item.label}
             </a>

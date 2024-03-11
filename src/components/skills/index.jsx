@@ -24,38 +24,38 @@ export const Skills = () => {
     useTransform(scrollYProgress, [0, 2], [3, -1000]),
     springConfig,
   );
-  //   const rotateX = useSpring(
-  //     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-  //     springConfig
-  //   );
-  //   const opacity = useSpring(
-  //     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-  //     springConfig
-  //   );
-  //   const rotateZ = useSpring(
-  //     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-  //     springConfig
-  //   );
+    const rotateX = useSpring(
+      useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+      springConfig
+    );
+    const opacity = useSpring(
+      useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+      springConfig
+    );
+    const rotateZ = useSpring(
+      useTransform(scrollYProgress, [0, 0.1], [20, 0]),
+      springConfig
+    );
   const translateY = useSpring(
     useTransform(scrollYProgress, [10, 0.1], [-700, 100]),
     springConfig,
   );
   return (
     <div
-    id='skills'
       ref={ref}
       className="h-[calc(100vh-5rem)] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
+      <span className="absolute -top-[8rem]" id="skills" />
       <div className="container">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">Skills</h1>
       </div>
 
       <motion.div
         style={{
-          //   rotateX,
-          //   rotateZ,
+            rotateX,
+            rotateZ,
           translateY,
-          //   opacity,
+            opacity,
         }}
         className=""
       >
@@ -98,7 +98,7 @@ export const ProductCard = ({ product, translate }) => {
         x: translate,
       }}
       whileHover={{
-        y: -20,
+        scale: 1.12,
       }}
       key={product.title}
       className="group/product h-[4.5rem] w-[4rem] relative flex-shrink-0 "

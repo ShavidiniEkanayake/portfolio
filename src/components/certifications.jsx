@@ -99,7 +99,8 @@ export const Certifications = ({
   };
 
   return (
-    <div className="my-20" id='certifications'>
+    <div className="relative my-20">
+      <span className="absolute -top-[8rem]" id="certifications" />
       <div className="container mt-20 mb-10">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">
           Certifications
@@ -123,7 +124,7 @@ export const Certifications = ({
         >
           {certifications.map((certification, index) => (
             <li
-              className={`bg-white w-[350px] max-w-full relative rounded-xl border hover:border-b-0 flex-shrink-0  px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  hover:transition-transform duration-300 e ease-in-out ${
+              className={`bg-white w-[350px] max-w-full relative rounded-xl border hover:border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px] hover:bg-[#FFF0F0] hover:border-[#FFC4C4]  hover:transition-transform duration-300 e ease-in-out ${
                 hoveredIndex === index ? 'scale-110' : 'scale-100'
               }`}
               key={certification.name}
