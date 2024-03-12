@@ -27,26 +27,13 @@ jobs:
   
       - name: Build changes
         run: npm run build
-
-      - name: Ensure out directory exists
-        run: mkdir -p ./out
       
       - name: Create .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch ./dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./out/
+          folder: ./dist/
           branch: gh-pages
           clean-exclude: preview
-
-      # - name: Deploy
-      #   uses: JamesIves/github-pages-deploy-action@releases/v4
-      #   with:
-      #     folder: out 
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: gh-pages
-
-      - name: List output directory
-        run: ls -l /home/runner/work/shavidiniekanayake/shavidiniekanayake/
