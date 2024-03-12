@@ -15,8 +15,13 @@ function App() {
     return () => clearTimeout(timeout);
   }, []);
 
+  let basename = '/';
+  if (window.location.hostname.includes('github.io')) {
+    basename = '/shavidiniekanayake/';
+  }
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsList />} />
