@@ -23,13 +23,13 @@ jobs:
 
       - name: Fix base URL 🔧
         run: | 
-          sed -i "s/basePath: \"\"/basePath: '\/shavidiniekanayake'/" react.config.js
+          sed -i "s/basePath: \"\"/basePath: '\/shavidiniekanayake'/" vite.config.js
   
-      # - name: Build changes
-      #   run: npm run build
+      - name: Build changes
+        run: npm run build
 
-      # - name: Create .no jekyll file 🚧
-      #   run: touch ./out/.nojekyll
+      - name: Create .no jekyll file 🚧
+        run: touch ./out/.nojekyll
 
       # - name: Deploy 🚀
       #   uses: JamesIves/github-pages-deploy-action@v4
@@ -47,3 +47,6 @@ jobs:
 
       - name: List output directory
         run: ls -l /home/runner/work/shavidiniekanayake/shavidiniekanayake/
+
+      - name: List output directory
+        run: ls -la
