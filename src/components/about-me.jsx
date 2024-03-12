@@ -54,7 +54,7 @@ export const AboutMe = () => {
             }}
           >
             <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
-              <img src="./images/profile.png" alt="" className="bg-cover z-50 relative" />
+              <img src="./assets/images/profile.png" alt="" className="bg-cover z-50 relative" />
             </div>
           </motion.div>
         </div>

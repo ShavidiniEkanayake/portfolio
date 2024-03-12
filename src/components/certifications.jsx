@@ -12,33 +12,33 @@ export const Certifications = ({
     {
       name: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
       date: 'July 15, 2022',
-      image: './images/microsoft.png',
+      image: '../public/assets/images/azure-fundamentals.png',
       style: 'sc',
     },
     {
       name: 'Postman API Fundamentals Student Expert',
       date: 'December 24, 2022',
-      image: './images/postman-student-expert.png',
+      image: '../public/assets/images/postman-student-expert.png',
     },
     {
       name: 'Scrum Foundation Professional (SFPC)',
       date: 'July 24, 2021',
-      image: './images/scrum.png',
+      image: '../public/assets/images/scrum.png',
     },
     {
       name: 'Oracle Foundations Associate',
       date: 'November 22, 2021',
-      image: './images/oracle-cloud.png',
+      image: '../public/assets/images/oracle-cloud.png',
     },
     {
       name: 'Remote Work and Virtual Collaboration Professional',
       date: 'December 07, 2021',
-      image: './images/rwvcpc.avif',
+      image: '../public/assets/images/rwvcpc.avif',
     },
     {
       name: 'Oracle Cloud Data Management Foundations Associate',
       date: 'December 05, 2022',
-      image: './images/oracle-cloud-data.png',
+      image: '../public/assets/images/oracle-cloud-data.png',
     },
   ];
 
