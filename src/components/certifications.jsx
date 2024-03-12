@@ -12,8 +12,7 @@ export const Certifications = ({
     {
       name: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
       date: 'July 15, 2022',
-      image: './assets/images/azure-fundamentals.png',
-      style: 'sc',
+      image: './assets/images/microsoft.png',
     },
     {
       name: 'Postman API Fundamentals Student Expert',
