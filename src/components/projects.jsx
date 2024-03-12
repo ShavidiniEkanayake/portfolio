@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 import { CardBody, CardContainer, CardItem } from './core/project-grid';
-import fooddelivery from '/images/food-delivery.png';
-import herbland from '/images/herbland.png';
-import loanapplication from '/images/loan-application.png';
-import todolist from '/images/todo-list.png';
+import fooddelivery from '../../public/assets/images/food-delivery.png';
+import herbland from '../../public/assets/images/herbland.png';
+import loanapplication from '../../public/assets/images/loan-application.png';
+import todolist from '../../public/assets/images/todo-list.png';
 
 export const Projects = () => {
   const [isHovered1, setIsHovered1] = useState(false);
