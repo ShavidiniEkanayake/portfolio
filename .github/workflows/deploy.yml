@@ -37,6 +37,4 @@ jobs:
           folder: ./dist/
           branch: gh-pages
           clean-exclude: preview
-          ssh-key: ${{ secrets.GITHUB_TOKEN }}
-
       
