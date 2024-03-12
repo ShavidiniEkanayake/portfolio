@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
-import { Meteors } from './core/meteors';
+
 import { BackgroundBeams } from './core/background-beams';
+import { Meteors } from './core/meteors';
 
 export const AboutMe = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -29,12 +30,13 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <div id="aboutMe" className='relative border-b border-black/10'>
+    <div id="aboutMe" className="relative border-b border-black/10">
       <div className="container max-w-3xl z-10">
         <div className="flex flex-col items-center justify-center min-h-screen gap-10 py-20">
           <div className="flex flex-col gap-6 text-center">
             <span className="text-xl font-Satoshi font-semibold">
-              Hi!, I am <span className="text-red-500 z-50 relative">Shavi</span>
+              Hi!, I am{' '}
+              <span className="text-red-500 z-50 relative">Shavi</span>
             </span>
             <span className="text-lg font-Satoshi z-50 relative">
               I have vast knowledge offull-stack application development and am
@@ -54,12 +56,16 @@ export const AboutMe = () => {
             }}
           >
             <div className="w-60 rounded-full outline outline-orange/10 outline-offset-8 aspect-square overflow-hidden">
-              <img src="./assets/images/profile.png" alt="" className="bg-cover z-50 relative" />
+              <img
+                src="./assets/images/profile.png"
+                alt=""
+                className="bg-cover z-50 relative"
+              />
             </div>
           </motion.div>
         </div>
       </div>
-      <BackgroundBeams/>
+      <BackgroundBeams />
       {/* <Meteors number={10} /> */}
     </div>
   );

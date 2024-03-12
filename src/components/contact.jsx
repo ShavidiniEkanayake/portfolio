@@ -20,8 +20,8 @@ export const Contact = () => {
 
   return (
     <div
-      className={`bg-[#F8F8F8] dark:bg-darkmode p-4 flex justify-center items-center text-center`} 
-      id='contact-me'
+      className={`bg-[#F8F8F8] dark:bg-darkmode p-4 flex justify-center items-center text-center`}
+      id="contact-me"
     >
       <div>
         <h1 className="text-xl font-Satoshi font-semibold dark:text-white text-textBlue mb-6 mt-3 md:text-3xl">

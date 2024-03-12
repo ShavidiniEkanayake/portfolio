@@ -1,7 +1,26 @@
-import { ReactIcon, Node, Js,MongoDB, Tailwind,Photoshop, Html, Sass, MySql,Illustrator, Bootstrap, Figma, Next, Webflow, XD, CSS,Express, Canva, Postman} from '../../icons';
+import {
+  Bootstrap,
+  CSS,
+  Canva,
+  Express,
+  Figma,
+  Html,
+  Illustrator,
+  Js,
+  MongoDB,
+  MySql,
+  Next,
+  Node,
+  Photoshop,
+  Postman,
+  ReactIcon,
+  Sass,
+  Tailwind,
+  Webflow,
+  XD,
+} from '../../icons';
 
 export const skills = [
- 
   {
     title: 'HTML',
     img: Html,
@@ -30,7 +49,7 @@ export const skills = [
     title: 'Moonbeam',
     img: ReactIcon,
   },
-  
+
   {
     title: 'Node js',
     img: Node,
@@ -51,7 +70,7 @@ export const skills = [
     title: 'Photoshop',
     img: Photoshop,
   },
-  
+
   {
     title: 'Next',
     img: Next,
@@ -74,7 +93,7 @@ export const skills = [
   },
   {
     title: 'Canva',
-    img:  Canva,
+    img: Canva,
   },
   {
     title: 'Postman',

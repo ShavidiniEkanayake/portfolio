@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import { CardBody, CardContainer, CardItem } from './core/project-grid';
 import fooddelivery from '../../public/assets/images/food-delivery.png';
 import herbland from '../../public/assets/images/herbland.png';
 import loanapplication from '../../public/assets/images/loan-application.png';
 import todolist from '../../public/assets/images/todo-list.png';
+import { CardBody, CardContainer, CardItem } from './core/project-grid';
 
 export const Projects = () => {
   const [isHovered1, setIsHovered1] = useState(false);
@@ -22,7 +22,7 @@ export const Projects = () => {
         Projects
       </h1>
 
-      <div className="grid-cols-1 lg:grid md:grid-cols-4 md:container">
+      <div className="grid-cols-1 lg:grid md:grid-cols-4 container">
         <CardContainer className="inter-var flex flex-col">
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
             <CardItem translateZ="100" className="w-full mb-4">

@@ -32,7 +32,7 @@ export const NavBar = () => {
     {
       path: '#skills',
       label: 'Skills',
-    }
+    },
   ];
 
   return (
@@ -74,7 +74,10 @@ export const NavBar = () => {
                 </svg>
               </button>
             </div>
-            <a className="bg-orange rounded-full text-white font-Satoshi font-bold px-3 py-1 hidden lg:block" href="#contact-me">
+            <a
+              className="bg-orange rounded-full text-white font-Satoshi font-bold px-3 py-1 hidden lg:block"
+              href="#contact-me"
+            >
               Say Hello!
             </a>
           </div>

@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <motion.div
       id="home"
-      className="box bg-[#ff9292]"
+      className="box bg-[#ffbcbc]"
       initial={{ opacity: 0.5, scale: 0.999 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{

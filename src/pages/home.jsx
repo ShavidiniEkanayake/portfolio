@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { motion } from "framer-motion";
 
 import {
   AboutMe,
@@ -11,9 +10,9 @@ import {
   Skills,
   Splash,
 } from '@/components';
-
 import { Footer } from '@/components/layout/footer';
 import { NavBar } from '@/components/layout/navbar';
+import { motion } from 'framer-motion';
 
 function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -29,7 +28,7 @@ function Home() {
   return (
     <div>
       {showSplash ? (
-            <Splash />
+        <Splash />
       ) : (
         <>
           <NavBar />
