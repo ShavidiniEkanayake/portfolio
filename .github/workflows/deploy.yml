@@ -28,7 +28,10 @@ jobs:
       - name: Build changes
         run: npm run build
 
-      - name: Create .no jekyll file 🚧
+      - name: Ensure out directory exists
+        run: mkdir -p ./out
+      
+      - name: Create .nojekyll file
         run: touch ./out/.nojekyll
 
       # - name: Deploy 🚀
@@ -47,6 +50,3 @@ jobs:
 
       - name: List output directory
         run: ls -l /home/runner/work/shavidiniekanayake/shavidiniekanayake/
-
-      - name: List output directory
-        run: ls -la
