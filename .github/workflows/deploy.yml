@@ -23,7 +23,7 @@ jobs:
 
       - name: Fix base URL 🔧
         run: | 
-          sed -i "s/basePath: \"\"/basePath: '\/shavidiniekanayake'/" vite.config.js
+          sed -i "s/base: \"\"/base: '\/shavidiniekanayake'/" vite.config.js
   
       - name: Build changes
         run: npm run build
