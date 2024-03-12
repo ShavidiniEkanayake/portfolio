@@ -37,7 +37,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <header className="bg-white/90 backdrop-blur dark:bg-darkmode border-b border-black/5 sticky top-0 z-50">
+      <header className="bg-white/90 backdrop-blur dark:bg-darkmode border-b border-black/5 sticky top-0 z-[100]">
         <div ref={navBarRef} className="container">
           <div className="flex justify-between items-center min-h-20">
             <div className="flex items-center gap-10">

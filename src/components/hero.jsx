@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <motion.div
       id="home"
-      className="box bg-bgorange"
+      className="box bg-[#ff9292]"
       initial={{ opacity: 0.5, scale: 0.999 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -43,11 +43,11 @@ export const Hero = () => {
               }
             >
               <div className="absolute inset-0 flex justify-center items-center">
-                <div className="container  text-center py-3 flex flex-col gap-1 sm:gap-2 bg-blue-300">
-                  <h1 className="text-3xl sm:text-6xl md:text-7xl font-black font-Satoshi tracking-tighter">
+                <div className="container  text-center py-3 flex flex-col gap-1 sm:gap-2 ">
+                  <h1 className="text-3xl sm:text-6xl md:text-7xl font-black font-Satoshi tracking-tighter text-white">
                     Creative Developer
                   </h1>
-                  <h1 className="text-3xl sm:text-6xl md:text-7xl font-Satoshi -tracking-tight uppercase">
+                  <h1 className="text-3xl sm:text-6xl md:text-7xl font-Satoshi -tracking-tight uppercase text-white">
                     Based in Sri Lanka
                   </h1>
                 </div>

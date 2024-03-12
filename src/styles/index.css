@@ -25,3 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 
+svg,
+svg *:focus {
+  outline: none !important;
+}
