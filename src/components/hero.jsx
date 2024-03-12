@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 
-import herbland from '../../public/images/herbland.png';
 import { BackgroundBeams } from './core/background-beams';
 import { BackgroundGradient } from './core/background-gradient';
 import { CardBody, CardContainer, CardItem } from './core/hero-grid';
