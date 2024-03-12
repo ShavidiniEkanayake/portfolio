@@ -31,9 +31,19 @@ jobs:
       # - name: Create .no jekyll file 🚧
       #   run: touch ./out/.nojekyll
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: ./out/
+      #     branch: gh-pages
+      #     clean-exclude: preview
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          folder: ./out/
+          folder: out 
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          clean-exclude: preview
+
+      - name: List output directory
+        run: ls -l /home/runner/work/shavidiniekanayake/shavidiniekanayake/
