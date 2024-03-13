@@ -3,14 +3,14 @@ import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/utils/cn';
 
 export const BackgroundGradient = ({
-  gradientBackgroundStart = '#ffff',
-  gradientBackgroundEnd = '#FFF7F5',
-  firstColor = 'FBE6E1',
-  secondColor = '#FBE6E1',
-  thirdColor = '100, 220, 255',
-  fourthColor = '100, 50, 50',
-  fifthColor = '180, 180, 50',
-  pointerColor = '255, 247, 0',
+  gradientBackgroundStart = "rgb(108, 0, 162)",
+  gradientBackgroundEnd = "rgb(0, 17, 82)",
+  firstColor = "225, 50, 50",
+  secondColor = "225, 50, 50",
+  thirdColor = '225, 220, 255',
+  fourthColor = '225, 220, 255',
+  fifthColor = '225, 220, 255',
+  pointerColor = '225, 220, 255',
   size = '80%',
   blendingValue = 'hard-light',
   children,
@@ -69,10 +69,11 @@ export const BackgroundGradient = ({
 
   return (
     <div
-      className={cn(
-        'h-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]',
-        containerClassName,
-      )}
+    className={cn(
+      'h-screen relative overflow-hidden top-0 left-0',
+      'bg-gradient-to-r from-[#ffeafa] via-[#FFCABE] to-[#d5cbef]', // Adjust colors as needed
+      containerClassName,
+    )}
     >
       <svg className="hidden">
         <defs>
@@ -103,7 +104,7 @@ export const BackgroundGradient = ({
             `opacity-100`,
           )}
         ></div>
-        {/* <div
+        <div
             className={cn(
               `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
@@ -111,7 +112,7 @@ export const BackgroundGradient = ({
               `animate-second`,
               `opacity-100`
             )}
-          ></div> */}
+          ></div>
         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_rgba(var(--third-color),_0.8)_0,_rgba(var(--third-color),_0)_50%)_no-repeat]`,
@@ -130,7 +131,7 @@ export const BackgroundGradient = ({
             `opacity-70`,
           )}
         ></div>
-        {/* <div
+        <div
             className={cn(
               `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
@@ -138,7 +139,7 @@ export const BackgroundGradient = ({
               `animate-fifth`,
               `opacity-100`
             )}
-          ></div> */}
+          ></div>
 
         {interactive && (
           <div
