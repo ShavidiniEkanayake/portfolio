@@ -29,7 +29,7 @@ export const Skills = () => {
     springConfig,
   );
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+    useTransform(scrollYProgress, [0, 0.1], [0.2, 1]),
     springConfig,
   );
   const rotateZ = useSpring(
@@ -43,22 +43,22 @@ export const Skills = () => {
   return (
     <div
       ref={ref}
-      className="h-[calc(100vh-5rem)] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] dark:bg-darkmode"
     >
       <span className="absolute -top-[8rem]" id="skills" />
       <div className="container">
-        <h1 className="font-Satoshi font-black text-5xl md:text-6xl">Skills</h1>
+        <h1 className="font-Satoshi font-black text-5xl md:text-6xl dark:text-white">Skills</h1>
       </div>
 
       <motion.div
         style={{
-          rotateX,
-          rotateZ,
-          translateY,
+          // rotateX,
+          // rotateZ,
+          // translateY,
           opacity,
         }}
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16 mb-20 pt-20">
           {firstRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -76,7 +76,7 @@ export const Skills = () => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16 pb-20">
           {thirdRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -100,7 +100,7 @@ export const ProductCard = ({ product, translate }) => {
         scale: 1.12,
       }}
       key={product.title}
-      className="group/product h-[4.5rem] w-[4rem] relative flex-shrink-0 "
+      className="group/product h-[4.5rem] w-[4rem] relative flex-shrink-0"
     >
       <div>{product.img()}</div>
     </motion.div>
