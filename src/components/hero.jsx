@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-
-import { BackgroundBeams } from './core/background-beams';
 import { BackgroundGradient } from './core/background-gradient';
 import { CardBody, CardContainer, CardItem } from './core/hero-grid';
 
