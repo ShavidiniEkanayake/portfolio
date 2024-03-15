@@ -1,6 +1,29 @@
-# React + Vite
+# My Portfolio
 
-Currently, two official plugins are available:
+Hi everyone!🖐
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my portfolio repository!This project showcases my skills and projects using React.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ShavidiniEkanayake/shavidiniekanayake.git
+
+2. Install dependencies
+   
+    ```bash
+   npm i
+    
+4. Start the server
+
+   ```bash
+   npm run dev 
+
+## Technologies Used
+
+- React
+- HTML/CSS
+- JavaScript
+- npm
