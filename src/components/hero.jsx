@@ -27,14 +27,6 @@ export const Hero = () => {
                 className="absolute inset-0 flex justify-center items-center"
               >
                 <div className="aspect-square h-[min(calc(100%-8rem),calc(100vw-8rem))] bg-gradient-to-b from-[black_30%] via-[transparent_30%_70%] to-[black_70%] rounded-full">
-                <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full absolute"
-          particleColor="#FFFFFF"
-        />
                 </div>
               </CardItem>
               <CardItem

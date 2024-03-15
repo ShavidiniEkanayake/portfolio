@@ -87,20 +87,13 @@ export const Certifications = ({
   const getSpeed = () => {
     if (containerRef.current) {
       containerRef.current.style.setProperty('--animation-duration', '45s');
-      // if (speed === "fast") {
-      //   containerRef.current.style.setProperty("--animation-duration", "40s");
-      // } else if (speed === "normal") {
-      //   containerRef.current.style.setProperty("--animation-duration", "40s");
-      // } else {
-      //   containerRef.current.style.setProperty("--animation-duration", "80s");
-      // }
     }
   };
 
   return (
     <div className="relative my-20">
       <span className="absolute -top-[8rem]" id="certifications" />
-      <div className="container mt-20 mb-10">
+      <div className="container mb-10">
         <h1 className="font-Satoshi font-black text-5xl md:text-6xl">
           Certifications
         </h1>

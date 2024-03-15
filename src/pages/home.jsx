@@ -36,8 +36,8 @@ function Home() {
           <AboutMe />
           <Experience />
           <Projects />
-          <Certifications />
           <Skills />
+          <Certifications />
           <Contact />
           <Footer />
         </>
