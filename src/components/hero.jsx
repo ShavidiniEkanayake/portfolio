@@ -37,10 +37,10 @@ export const Hero = () => {
               >
                 <div className="absolute inset-0 flex justify-center items-center">
                   <div className="container  text-center py-3 flex flex-col gap-1 sm:gap-2 ">
-                    <h1 className="text-3xl sm:text-6xl md:text-7xl font-black font-Satoshi tracking-tighter ">
+                    <h1 className="text-3xl sm:text-6xl md:text-7xl font-black font-Satoshi tracking-tighter textdev">
                       Creative Developer
                     </h1>
-                    <h1 className="text-3xl sm:text-6xl md:text-7xl font-Satoshi -tracking-tight uppercase ">
+                    <h1 className="text-3xl sm:text-6xl md:text-7xl font-Satoshi -tracking-tight uppercase textsilanka">
                       Based in Sri Lanka
                     </h1>
                   </div>

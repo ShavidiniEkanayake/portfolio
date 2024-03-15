@@ -10,11 +10,6 @@ import todolist from '../../public/assets/images/todo-list.png';
 import { CardBody, CardContainer, CardItem } from './core/project-grid';
 
 export const Projects = () => {
-  const [isHovered1, setIsHovered1] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
-  const [isHovered3, setIsHovered3] = useState(false);
-  const [isHovered4, setIsHovered4] = useState(false);
-
   return (
     <motion.section className="relative">
       <span className="absolute -top-[8rem]" id="projects" />

@@ -60,4 +60,12 @@ svg *:focus {
   .tracingBeam{
     margin-left: 60px !important;
   }
+
+  .textdev{
+    font-size: 100px !important;
+  }
+
+  .textsilanka{
+    font-size: 93px !important;
+  }
 }
