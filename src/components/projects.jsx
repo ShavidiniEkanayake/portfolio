@@ -22,12 +22,12 @@ export const Projects = () => {
         Projects
       </h1>
 
-      <div className="grid-cols-1 lg:grid md:grid-cols-4 container">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container gap-9 custom-grid">
         <CardContainer className="inter-var flex flex-col">
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="100"
-              className="w-full mb-4 grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
+              className="w-full grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
             >
               <img
                 src={todolist}
@@ -35,9 +35,6 @@ export const Projects = () => {
                 width="1000"
                 className="h-48 w-full object-cover rounded-xl"
                 alt="thumbnail"
-                style={{
-                  transition: 'filter 0.3s ease',
-                }}
               />
               <a
                 href="https://github.com/ShavidiniEkanayake/todo-list-manager"
@@ -63,7 +60,7 @@ export const Projects = () => {
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="100"
-              className="w-full mb-4 grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
+              className="w-full grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
             >
               <img
                 src={fooddelivery}
@@ -93,10 +90,10 @@ export const Projects = () => {
         </CardContainer>
 
         <CardContainer className="inter-var flex flex-col">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
+          <CardBody className="bg-gray-50  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
             <CardItem
               translateZ="100"
-              className="w-full mb-4 grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
+              className="w-full grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
             >
               <img
                 src={herbland}
@@ -126,7 +123,10 @@ export const Projects = () => {
 
         <CardContainer className="inter-var flex flex-col">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border  ">
-            <CardItem translateZ="100" className="w-full mb-4 grayscale hover:grayscale-0 contrast-125 hover:contrast-100">
+            <CardItem
+              translateZ="100"
+              className="w-full grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
+            >
               <img
                 src={loanapplication}
                 height="1000"
@@ -143,7 +143,7 @@ export const Projects = () => {
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white py-4"
                 >
-                  Loan Application UI Design
+                  Loan Application UI Design - Figma
                 </CardItem>
               </a>
 
@@ -155,7 +155,7 @@ export const Projects = () => {
         </CardContainer>
       </div>
 
-      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange">
+      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange py-5">
         <Link to="/projects" target="_blank" rel="noopener noreferrer">
           More Projects
         </Link>

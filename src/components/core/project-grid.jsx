@@ -72,7 +72,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          'pb-8 flex items-center justify-center',
+          'flex items-center justify-center',
           containerClassName,
         )}
         style={{
@@ -103,7 +103,7 @@ export const CardBody = ({ children, className }) => {
   return (
     <div
       className={cn(
-        'h-96 w-full lg:w-[19rem] [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]',
+        'h-96 w-80 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]',
         className,
       )}
     >

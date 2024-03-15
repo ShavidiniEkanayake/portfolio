@@ -47,7 +47,7 @@ export const Skills = () => {
     >
       <span className="absolute -top-[8rem]" id="skills" />
       <div className="container">
-        <h1 className="font-Satoshi font-black text-5xl md:text-6xl dark:text-white">Skills</h1>
+        <h1 className="font-Satoshi font-black text-5xl md:text-6xl dark:text-white mt-10">Skills</h1>
       </div>
 
       <motion.div
