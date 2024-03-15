@@ -43,4 +43,21 @@ svg *:focus {
   .custom-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
+
+  .cardwidth{
+    width: 460px !important;
+  }
+
+  .experience-topic {
+    display: block !important;
+    align-items: flex-start !important; 
+  }
+
+  .margin{
+    margin-bottom: 70px !important;
+  }
+
+  .tracingBeam{
+    margin-left: 60px !important;
+  }
 }

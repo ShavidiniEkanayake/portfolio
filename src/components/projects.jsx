@@ -60,7 +60,7 @@ export const Projects = () => {
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="100"
-              className="w-full grayscale hover:grayscale-0 contrast-125 hover:contrast-100"
+              className="w-full grayscale hover:grayscale-0 contrast-[3] hover:contrast-100"
             >
               <img
                 src={fooddelivery}
@@ -155,7 +155,7 @@ export const Projects = () => {
         </CardContainer>
       </div>
 
-      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange py-5">
+      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange py-10">
         <Link to="/projects" target="_blank" rel="noopener noreferrer">
           More Projects
         </Link>

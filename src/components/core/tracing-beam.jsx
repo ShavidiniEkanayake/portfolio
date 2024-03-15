@@ -38,7 +38,7 @@ export const TracingBeam = ({ children, className }) => {
     motion.div,
     {
       ref: ref,
-      className: cn('relative w-full max-w-4xl mx-auto h-full', className),
+      className: cn('relative w-full max-w-4xl mx-auto h-full tracingBeam ', className),
     },
     React.createElement(
       'div',

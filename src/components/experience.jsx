@@ -4,11 +4,11 @@ export const Experience = () => {
   return (
     <div className="container relative mt-32">
       <span className="absolute -top-[10rem]" id="experience" />
-      <div className="lg:flex items-start mb-10">
-        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
+      <div className="lg:flex items-start mb-10 experience-topic">
+        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7 margin">
           Education
         </h1>
-        <TracingBeam className="">
+        <TracingBeam>
           <div className=" antialiased relative">
             {education.map((item, index) => (
               <div key={`content-${index}`} className="mb-20">
@@ -34,8 +34,8 @@ export const Experience = () => {
         </TracingBeam>
       </div>
 
-      <div className="lg:flex items-start">
-        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7">
+      <div className="lg:flex items-start experience-topic">
+        <h1 className="font-Satoshi font-black md:text-[2.8rem] text-4xl w-52 lg:mb-0 md:mb-10 mb-7 margin">
           Work
         </h1>
         <TracingBeam className="">
