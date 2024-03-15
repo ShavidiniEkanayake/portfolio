@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
+
 import { BackgroundGradient } from './core/background-gradient';
 import { CardBody, CardContainer, CardItem } from './core/hero-grid';
-import {SparklesCore} from './core/sparkles'
 
 export const Hero = () => {
   return (
@@ -17,7 +17,6 @@ export const Hero = () => {
         y: { duration: 0 },
       }}
     >
-
       <BackgroundGradient>
         <div className="h-[calc(100vh-5rem)] overflow-hidden w-full absolute z-10">
           <CardContainer>
@@ -26,8 +25,7 @@ export const Hero = () => {
                 translateZ="10"
                 className="absolute inset-0 flex justify-center items-center"
               >
-                <div className="aspect-square h-[min(calc(100%-8rem),calc(100vw-8rem))] bg-gradient-to-b from-[black_30%] via-[transparent_30%_70%] to-[black_70%] rounded-full">
-                </div>
+                <div className="aspect-square h-[min(calc(100%-8rem),calc(100vw-8rem))] bg-gradient-to-b from-[black_30%] via-[transparent_30%_70%] to-[black_70%] rounded-full"></div>
               </CardItem>
               <CardItem
                 translateZ="60"

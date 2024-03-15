@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/utils/cn';
 
 export const BackgroundGradient = ({
-  gradientBackgroundStart = "rgb(108, 0, 162)",
-  gradientBackgroundEnd = "rgb(0, 17, 82)",
-  firstColor = "225, 50, 50",
-  secondColor = "225, 50, 50",
+  gradientBackgroundStart = 'rgb(108, 0, 162)',
+  gradientBackgroundEnd = 'rgb(0, 17, 82)',
+  firstColor = '225, 50, 50',
+  secondColor = '225, 50, 50',
   thirdColor = '225, 220, 255',
   fourthColor = '225, 220, 255',
   fifthColor = '225, 220, 255',
@@ -69,11 +69,11 @@ export const BackgroundGradient = ({
 
   return (
     <div
-    className={cn(
-      'h-screen relative overflow-hidden top-0 left-0',
-      'bg-gradient-to-r from-[#ffeafa] via-[#FFCABE] to-[#d5cbef]', // Adjust colors as needed
-      containerClassName,
-    )}
+      className={cn(
+        'h-screen relative overflow-hidden top-0 left-0',
+        'bg-gradient-to-r from-[#ffeafa] via-[#FFCABE] to-[#d5cbef]', // Adjust colors as needed
+        containerClassName,
+      )}
     >
       <svg className="hidden">
         <defs>
@@ -105,14 +105,14 @@ export const BackgroundGradient = ({
           )}
         ></div>
         <div
-            className={cn(
-              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
-              `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-              `[transform-origin:calc(50%-400px)]`,
-              `animate-second`,
-              `opacity-100`
-            )}
-          ></div>
+          className={cn(
+            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
+            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `[transform-origin:calc(50%-400px)]`,
+            `animate-second`,
+            `opacity-100`,
+          )}
+        ></div>
         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_rgba(var(--third-color),_0.8)_0,_rgba(var(--third-color),_0)_50%)_no-repeat]`,
@@ -132,14 +132,14 @@ export const BackgroundGradient = ({
           )}
         ></div>
         <div
-            className={cn(
-              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
-              `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
-              `[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
-              `animate-fifth`,
-              `opacity-100`
-            )}
-          ></div>
+          className={cn(
+            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
+            `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+            `[transform-origin:calc(50%-800px)_calc(50%+800px)]`,
+            `animate-fifth`,
+            `opacity-100`,
+          )}
+        ></div>
 
         {interactive && (
           <div

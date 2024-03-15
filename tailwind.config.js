@@ -30,7 +30,7 @@ module.exports = {
         darkmode: '#0D1117',
         orange: '#FF2E00',
         bgorange: '#FFF7F5',
-        background: 'var(--background)'
+        background: 'var(--background)',
       },
       maxWidth: {
         body: '1680px',
@@ -45,7 +45,8 @@ module.exports = {
         xsm: '450px',
       },
       animation: {
-        scroll:'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        scroll:
+          'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
         first: 'moveVertical 30s ease infinite',
         second: 'moveInCircle 20s reverse infinite',
         third: 'moveInCircle 40s linear infinite',

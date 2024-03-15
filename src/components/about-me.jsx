@@ -39,9 +39,9 @@ export const AboutMe = () => {
             </span>
             <span className="text-lg font-Satoshi z-50 relative">
               As a UI/UX engineer and frontend developer, I bring a wealth of
-              knowledge and experience in frontend application development.
-              With a strong grasp of the software development lifecycle, I excel
-              in managing projects from concept to implementation.
+              knowledge and experience in frontend application development. With
+              a strong grasp of the software development lifecycle, I excel in
+              managing projects from concept to implementation.
             </span>
           </div>
           <motion.div

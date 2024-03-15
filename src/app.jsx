@@ -5,8 +5,6 @@ import '@/styles/index.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true);
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowSplash(false);

@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF2E00;
+  background: #ff2e00;
 }
 
 html {
@@ -44,28 +44,28 @@ svg *:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
-  .cardwidth{
+  .cardwidth {
     width: 460px !important;
   }
 
   .experience-topic {
     display: block !important;
-    align-items: flex-start !important; 
+    align-items: flex-start !important;
   }
 
-  .margin{
+  .margin {
     margin-bottom: 70px !important;
   }
 
-  .tracingBeam{
+  .tracingBeam {
     margin-left: 60px !important;
   }
 
-  .textdev{
+  .textdev {
     font-size: 100px !important;
   }
 
-  .textsilanka{
+  .textsilanka {
     font-size: 93px !important;
   }
 }

@@ -4,7 +4,6 @@ import { cn } from '@/utils/cn';
 
 export const Certifications = ({
   direction = 'left',
-  speed = 'fast',
   pauseOnHover = true,
   className,
 }) => {

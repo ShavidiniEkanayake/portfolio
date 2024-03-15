@@ -1,8 +1,5 @@
 import { Footer } from '@/components/layout/footer';
-import { NavBar } from '@/components/layout/navbar';
-import { motion } from 'framer-motion';
 
-import { BentoGrid, BentoGridItem } from '../components/core/project-grid';
 import { TypewriterEffectSmooth } from '../components/core/project-typewritten-effect';
 
 export const ProjectsList = () => {
@@ -92,32 +89,6 @@ export const ProjectsList = () => {
 
   return (
     <div>
-      {/* <NavBar /> */}
-      {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-14 ">
-        <div className="flex justify-center">
-          <ol className="ml-10 list-decimal w-full">
-            {items.map((project, index) => (
-              <li key={index} className="my-6">
-                <div className="flex flex-col lg:flex-row items-start">
-                  <div className="mb-2 lg:mb-0 w-1/3">
-                    <TypewriterEffectSmooth
-                      words={[{ text: project.title }]}
-                      className="text-base md:text-lg font-semibold"
-                    />
-                  </div>
-                  <div className="w-2/3">
-                    <TypewriterEffectSmooth
-                      words={[{ text: project.description }]}
-                      className="text-sm md:text-base text-gray-600 overflow-hidden"
-                    />
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </div> */}
-
       <div className="container my-16">
         <div className="lg:ml-80 md:ml-20 ml-4">
           <ul className="list-disc">
