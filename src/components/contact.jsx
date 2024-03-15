@@ -1,13 +1,10 @@
 import { useState } from 'react';
 
-import { Dribble, Facebook, Github } from '../icons';
+import { Dribble, Facebook, Github, LinkedIn } from '../icons';
 
 export const Contact = () => {
   const emailAddress = 'shavidilunika10s@gmail.com';
   const phoneNumber = '+94703009912';
-  const [isFacebookHovered, setFacebookHovered] = useState(false);
-  const [isGithubHovered, setGithubHovered] = useState(false);
-  const [isDribbleHovered, setDribbleHovered] = useState(false);
   const [isToastVisible, setToastVisible] = useState(false);
 
   const copyPhoneNumber = () => {
@@ -29,21 +26,28 @@ export const Contact = () => {
         </h1>
         <div className="flex justify-center space-x-4 mt-4">
           <a
-            href="https://www.facebook.com/your-facebook-profile"
+            href="https://www.linkedin.com/in/shavidini-ekanayake/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110" />
+            <LinkedIn className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110" />
           </a>
           <a
-            href="https://www.facebook.com/your-facebook-profile"
+            href="https://github.com/ShavidiniEkanayake"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Github className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110" />
           </a>
           <a
-            href="https://www.facebook.com/your-facebook-profile"
+            href="https://facebook.com/shavi.dilunika/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook className="w-6 h-6 cursor-pointer transition-transform duration-300 transform hover:scale-110" />
+          </a>
+          <a
+            href="https://dribbble.com/shavidiniekanayake"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,7 +65,7 @@ export const Contact = () => {
           >
             {phoneNumber}
             {isToastVisible && (
-              <span className="text-green-500 ml-2">Number copied!</span>
+              <span className="text-orange ml-2">Number copied!</span>
             )}
           </div>
         </div>

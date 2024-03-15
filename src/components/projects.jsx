@@ -150,7 +150,7 @@ export const Projects = () => {
         </CardContainer>
       </div>
 
-      <div className="text-center font-Satoshi font-bold text-lg hover:text-orange py-10">
+      <div className="text-center font-Satoshi font-medium text-lg hover:text-orange py-10">
         <Link to="/projects" target="_blank" rel="noopener noreferrer">
           More Projects
         </Link>

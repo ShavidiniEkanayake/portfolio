@@ -22,3 +22,4 @@ export { default as CSS } from './css';
 export { default as Express } from './express';
 export { default as Canva } from './canva';
 export { default as Postman } from './postman';
+export {default as LinkedIn} from './linkedin'

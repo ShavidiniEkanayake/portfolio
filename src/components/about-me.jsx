@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { BackgroundBeams } from './core/background-beams';
-import { Meteors } from './core/meteors';
 
 export const AboutMe = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -39,10 +38,10 @@ export const AboutMe = () => {
               <span className="text-red-500 z-50 relative">Shavi</span>
             </span>
             <span className="text-lg font-Satoshi z-50 relative">
-              I have vast knowledge offull-stack application development and am
-              well-experienced in all aspects of the software development
-              lifecycle and end-to-end project management from concept to
-              practice.
+              As a UI/UX engineer and frontend developer, I bring a wealth of
+              knowledge and experience in frontend application development.
+              With a strong grasp of the software development lifecycle, I excel
+              in managing projects from concept to implementation.
             </span>
           </div>
           <motion.div
@@ -66,7 +65,6 @@ export const AboutMe = () => {
         </div>
       </div>
       <BackgroundBeams />
-      {/* <Meteors number={10} /> */}
     </div>
   );
 };

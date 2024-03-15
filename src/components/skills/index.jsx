@@ -24,22 +24,10 @@ export const Skills = () => {
     useTransform(scrollYProgress, [0, 2], [3, -1000]),
     springConfig,
   );
-  const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig,
-  );
   const opacity = useSpring(
     useTransform(scrollYProgress, [0, 0.1], [0.2, 1]),
     springConfig,
-  );
-  const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.1], [20, 0]),
-    springConfig,
-  );
-  const translateY = useSpring(
-    useTransform(scrollYProgress, [10, 0.1], [-700, 100]),
-    springConfig,
-  );
+  )
   return (
     <div
       ref={ref}
@@ -52,9 +40,6 @@ export const Skills = () => {
 
       <motion.div
         style={{
-          // rotateX,
-          // rotateZ,
-          // translateY,
           opacity,
         }}
       >
