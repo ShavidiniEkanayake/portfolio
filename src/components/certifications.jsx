@@ -31,7 +31,7 @@ export const Certifications = ({
     {
       name: 'Remote Work and Virtual Collaboration Professional',
       date: 'December 07, 2021',
-      image: './assets/images/rwvcpc.avif',
+      image: './assets/images/rwvcpc.png',
     },
     {
       name: 'Oracle Cloud Data Management Foundations Associate',
