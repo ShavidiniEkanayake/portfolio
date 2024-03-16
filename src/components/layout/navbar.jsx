@@ -26,13 +26,13 @@ export const NavBar = () => {
       label: 'Projects',
     },
     {
-      path: '#certifications',
-      label: 'Certificates',
-    },
-    {
       path: '#skills',
       label: 'Skills',
     },
+    {
+      path: '#certifications',
+      label: 'Certificates',
+    }
   ];
 
   return (
